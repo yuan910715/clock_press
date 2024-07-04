@@ -4,7 +4,7 @@ export default {
     title: 'ClockWise时钟升级版教程', // 站点标题
     themeConfig: {
         nav: [
-            { text: '查找我的时钟', link: '/find' },
+            { text: '查找我的时钟', link: 'https://topyuan.top/clock/find' },
         ],
         socialLinks: [
             {icon: "github", link: "https://github.com/yuan910715"},
