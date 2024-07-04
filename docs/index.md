@@ -41,3 +41,24 @@ ClockWise是巴西人**Jonathas Barbosa**开发的开源项目，项目代码在
 ![Real2](/img/real2.png)
 
 ![Real3](/img/real3.png)
+
+## 项目成员
+
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: 'https://topyuan.top/yuan.png',
+    name: '冯雪原',
+    title: 'Creator',
+    links: [
+      { icon: 'github', link: 'https://github.com/yuan910715' }
+    ]
+  },
+]
+</script>
+
+<VPTeamMembers size="small" :members="members" />
+
+期待你的加入

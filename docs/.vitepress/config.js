@@ -42,6 +42,10 @@ export default {
             returnToTopLabel:"返回顶部",
             outlineTitle:"目录",
             outline: [1,4],
+            editLink: {
+                pattern: 'https://github.com/yuan910715/clock_press/edit/main/docs/:path',
+                text: '在GitHub上编辑此页'
+            },           
             
     }
 } 
