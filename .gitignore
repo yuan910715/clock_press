@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+docs/.vitepress/dist/
+npm-debug.log
+.idea
+yarn.lock
+yarn-error.log
