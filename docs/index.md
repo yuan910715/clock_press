@@ -34,6 +34,7 @@ ClockWise是巴西人**Jonathas Barbosa**开发的开源项目，项目代码在
 修改表盘重写时间逻辑，时钟达到毫秒级精度。马里奥表盘增加秒数隐藏显示
 - **OTA在线更新**  
 具备可持续更新能力，开发了OTA升级功能，有新固件发布时，无需重新刷写固件，时钟可自动完成更新，后续可持续增加配置项、优化功能、增加表盘皮肤……
+![ota](/img/ota.png)
 
 ### 实拍图
 ![Real1](/img/real1.png)
@@ -41,6 +42,8 @@ ClockWise是巴西人**Jonathas Barbosa**开发的开源项目，项目代码在
 ![Real2](/img/real2.png)
 
 ![Real3](/img/real3.png)
+
+![all](/img/all.png)
 
 ## 项目成员
 

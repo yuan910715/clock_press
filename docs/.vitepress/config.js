@@ -19,7 +19,9 @@ export default {
                     text: "关于",
                     items:[
                         {text: "简介",link: "/"},
-                        {text: "硬件",link: "/hardware.md"}]
+                        {text: "硬件",link: "/hardware.md"},
+                        {text: "摆放方式",link: "/put.md"}
+                    ]
                 },                
                 {
                     text: "使用说明",
