@@ -96,7 +96,7 @@ export default {
                 ],
                 outline: [1,4],
                 editLink: {
-                    pattern: 'https://github.com/yuan910715/clock_press/edit/main/docs/en/:path',
+                    pattern: 'https://github.com/yuan910715/clock_press/edit/main/docs/:path',
                     text: 'Edit this page on Github'
                 },           
         }
