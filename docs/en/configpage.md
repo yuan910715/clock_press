@@ -15,4 +15,4 @@ You can also visit https://topyuan.top/clock/find_en and the server will give yo
 
 ## Get IP through router
 You can also view the clock IP on your own router management page/App  
-`To prevent the clock IP from changing, you can also set it to a fixed static IP here`
+`To prevent the clock IP from changing, you can also set it to a static IP here`

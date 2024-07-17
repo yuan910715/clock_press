@@ -5,7 +5,7 @@
 ![ClockWise Logo](/img/clockwise_logo.png)
 ClockWise is an open source project developed by **Jonathas Barbosa**, the project code is hosted on GitHub, the repository address is: https://github.com/jnthas/clockwise , I am also on the project contributor list and have submitted some optimization code
 
-The project use a 64x64 pixel LED matrix for display, driven by ESP32, implemented the clock display engine and multiple watch face skins
+The project use a 64x64 pixel LED matrix for display, driven by ESP32, implemented the clock display engine and multiple clockfaces
 
 Projects are more suitable for software/hardware professionals, you need to prepare hardware, wire, select clockface on web page, flash firmware, and configure network via serial communication, after configure the time zone, NTP server and other parameters on the configuration page, and the clock can be used normally
 
@@ -16,7 +16,7 @@ After using ClockWise for a few months, I made some optimizations and push them 
 Another idea is to modify this project to be more suitable for ordinary users  
 `It is consistent with the idea of ​​my own open source project SuperY Wifi Clock, https://github.com/yuan910715/Esp8266_Wifi_Matrix_Clock`
 
-I designed the PCB board, hardware welding and firmware flashing are completed by professionals, ordinary users only need to configure on the configuration page, changing the clockface does not require reflashing the firmware. Since this idea is quite different from the original author's project, I made this project independent, ClockWise Plus, following the original project's MIT open source agreement
+I designed the PCB board, hardware welding and firmware flashing are completed by professionals, ordinary users only need to configure on the configuration page, changing the clockface does not require reflashing the firmware. Since this idea is quite different from the original author's project, I made this project independent, ClockWise Plus, following the original project's MIT open source license
 
 ### Upgrades
 
@@ -31,7 +31,7 @@ The configuration page has Chinese and English version now, and the default time
 - **Configuration page optimization**  
 All configurations take effect immediately without restarting the clock, added change log, erase wifi button, running time, etc. put js file into a remote server to prevent ESP32 crashed
 - **Clockface optimization**  
-Modify the clockface and rewrite the time logic, so that the clock reaches millisecond accuracy. Mario clockface adds seconds at the first line
+Modify the clockface and rewrite the time logic, so that the clock reaches millisecond accuracy. Super Mario clockface adds seconds at the first line
 - **OTA update**  
 The clock has the ability to continuously update, when new firmware is released, the clock can be automatically updated without re-flashing the firmware, I will add configuration items, optimize functions, and add clockfaces in the future...
 ![ota](/img/ota.png)

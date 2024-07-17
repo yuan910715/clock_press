@@ -2,7 +2,7 @@
 
 ## LED
 
-Use P2.5 full-color LED display module, often used in weddings, concerts and other large screens  
+Use P2.5 full-color LED display module, often used in weddings, concerts and other large screens, compatible with P3 and other LED sizes  
 Size: 160mm x 160mm  
 Point spacing: 2.5mm  
 LED Package: SMD 2121  
@@ -14,7 +14,7 @@ Operating temperature: -25-50℃
 
 ## ESP32
 
-EESP32 is a high-performance, low-power Wi-Fi and Bluetooth dual-mode system-on-chip (SoC) launched by Espressif Systems, it is widely used in the fields of Internet of Things, smart home, wearable devices, etc. It is based on the extremely low-power Tensilica Xtensa LX6 microprocessor and integrates a wealth of peripherals and sensor interfaces
+ESP32 is a high-performance, low-power Wi-Fi and Bluetooth dual-mode system-on-chip (SoC) launched by Espressif Systems, it is widely used in the fields of Internet of Things, smart home, wearable devices, etc. It is based on the extremely low-power Tensilica Xtensa LX6 microprocessor and integrates a wealth of peripherals and sensor interfaces
 ![ESP32](/img/esp32.png)
 
 ## PCB
