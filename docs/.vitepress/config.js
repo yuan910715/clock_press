@@ -84,8 +84,8 @@ export default {
                     {
                         text: "Instructions",
                         items:[
-                            {text: "Config WiFi",link: "/en/wifi.md"},
-                            {text: "Config Page",link: "/en/configpage.md"},
+                            {text: "Setup WiFi",link: "/en/wifi.md"},
+                            {text: "Configuration Page",link: "/en/configpage.md"},
                             {text: "Configuration Details",link: "/en/configpagedetail.md"}
                         ]
                     },

@@ -1,4 +1,4 @@
-# Config Page
+# Configuration Page
 
 All settings for the clock are completed on the configuration page, the configuration page is provided by the clock. You need to know the IP address of the clock to enter the configuration page
 

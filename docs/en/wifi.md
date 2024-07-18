@@ -1,4 +1,4 @@
-# Config WiFi
+# Setup WiFi
 
 ## When?
 
