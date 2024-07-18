@@ -6,6 +6,7 @@ export default {
           label: '简体中文',
           lang: 'zh-CN',
           title: 'ClockWise时钟升级版教程',
+          description: 'ClockWise时钟升级版教程',
           themeConfig: {
             nav: [
                 { text: '时钟固件安装', link: 'https://topyuan.top/clock/install' },
@@ -63,6 +64,7 @@ export default {
           lang: 'en',
           link: '/en',
           title: 'ClockWise Plus Tutorial',
+          description: 'ClockWise Plus Tutorial',
           themeConfig: {
             nav: [
                 { text: 'Firmware Installer', link: 'https://topyuan.top/clock/install_en' },
