@@ -1,6 +1,7 @@
 export default {
     base: '/clock/',
-    lang: 'zh-CN',    
+    lang: 'zh-CN',
+    head: [['script', { type: 'text/javascript', src: 'https://js.users.51.la/21660765.js' }]],
     locales: {
         root: {
           label: '简体中文',
@@ -26,7 +27,8 @@ export default {
                         items:[
                             {text: "简介",link: "/"},
                             {text: "硬件",link: "/hardware.md"},
-                            {text: "摆放方式",link: "/put.md"}
+                            {text: "摆放方式",link: "/put.md"},
+                            {text: "联系我",link: "/contact.md"}
                         ]
                     },                
                     {
@@ -80,7 +82,8 @@ export default {
                         items:[
                             {text: "Introduction",link: "/en/index.md"},
                             {text: "Hardware",link: "/en/hardware.md"},
-                            {text: "Placement",link: "/en/put.md"}
+                            {text: "Placement",link: "/en/put.md"},
+                            {text: "Contact Me",link: "/contact.md"}
                         ]
                     },                
                     {

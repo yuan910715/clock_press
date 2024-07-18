@@ -5,7 +5,7 @@ The configuration page can adapt to PC browsers and mobile browsers
 ## Top Information
 
 ### Change log
-Clock version update history, you can view the update date and content of each version, if you have features you would like to add, please contact me: admin@topyuan.top  
+Clock version update history, you can view the update date and content of each version, if you have features you would like to add, please contact me: <a href="mailto:admin@topyuan.top">admin@topyuan.top</a>  
 `The clock has a built-in automatic update function. You may open the configuration page every once in a while and find that the clock version has been updated and new functions have been added`
 
 ### Erase WiFi
