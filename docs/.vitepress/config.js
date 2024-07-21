@@ -83,7 +83,7 @@ export default {
                             {text: "Introduction",link: "/en/index.md"},
                             {text: "Hardware",link: "/en/hardware.md"},
                             {text: "Placement",link: "/en/put.md"},
-                            {text: "Contact Me",link: "/contact.md"}
+                            {text: "Contact Me",link: "/en/contact.md"}
                         ]
                     },                
                     {
