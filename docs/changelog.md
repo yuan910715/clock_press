@@ -2,6 +2,9 @@
 
 ## 时钟说明更新日志
 
+### 2024.7.22 v1.3  
+- 增加 <a href="https://topyuan.top/clock/configpagedetail.html#ntp%E8%87%AA%E5%8A%A8%E5%AF%B9%E6%97%B6%E6%9C%8D%E5%8A%A1%E5%99%A8">请勿使用pool.ntp.org说明</a>
+
 ### 2024.7.16 v1.2  
 - 增加固件安装器
 - 增加英文说明

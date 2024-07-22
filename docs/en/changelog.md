@@ -2,6 +2,9 @@
 
 ## Changelog for tutorial
 
+### 2024.7.22 v1.3  
+- Added <a href="https://topyuan.top/clock/en/configpagedetail.html#ntp-server">DO NOT USE pool.ntp.org</a>
+
 ### 2024.7.16 v1.2  
 - Added firmware installer
 - Added English tutorail

@@ -21,8 +21,29 @@
 `带有夏令时的POSIX时区表达式会更为复杂，详见POSIX时区字符串章节`
 
 ## NTP自动对时服务器
-设置NTP服务器地址，时钟和此NTP服务器同步时间，如配置错误，时钟将无法对时，从1970-1-1 8:00开始走时  
-`互联网上有很多开放的NTP服务器 如pool.ntp.org ntp2.aliyun.com等`
+设置NTP服务器地址(默认值ntp2.aliyun.com)，时钟和此NTP服务器同步时间，如配置错误，时钟将无法对时，从1970-1-1 8:00开始走时  
+**请勿使用pool.ntp.org** 它是一个优秀的大型NTP服务器池，但偶尔会提供一个无法使用的节点，持续几分钟-几十分钟，由于时钟NTP同步时LED会卡顿一下且NTP同步失败后每5秒重试，时钟会在这期间每5秒卡顿一下，在有连续动画的表盘会出现明显卡顿(例如Pac Man)   
+`互联网上有很多开放的NTP服务器 国内优质NTP列表(海外请切换至英文说明查看):`
+``` 
+阿里云：
+ntp1.aliyun.com
+ntp2.aliyun.com
+ntp3.aliyun.com
+ntp4.aliyun.com
+ntp5.aliyun.com
+ntp6.aliyun.com
+ntp7.aliyun.com
+
+腾讯云:
+time1.cloud.tencent.com
+time2.cloud.tencent.com
+time3.cloud.tencent.com
+time4.cloud.tencent.com
+time5.cloud.tencent.com
+
+微软:
+time.windows.com
+```
 
 ## 使用24小时制？
 是否使用24小时制，如开启时钟将使用24小时制

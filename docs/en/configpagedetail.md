@@ -21,8 +21,41 @@ The clock will automatically connect to the remote server to convert Asia/Shangh
 `POSIX time zone expressions with daylight saving time are more complicated; see the POSIX Timezone String section for more details`
 
 ## NTP Server
-Set the NTP server address, the clock will synchronize with this NTP server. If the configuration is wrong, the clock will not be able to synchronize, the time will start from 1970-1-1 8:00  
-`There are many open NTP servers on the Internet, such as pool.ntp.org ntp2.aliyun.com, etc.`
+Set the NTP server address(default:ntp2.aliyun.com), the clock will synchronize with this NTP server. If the configuration is wrong, the clock will not be able to synchronize, the time will start from 1970-1-1 8:00  
+**DO NOT USE pool.ntp.org** it is an excellent large pool of NTP servers, but occasionally provides an unavailable node, lasts for dozens of minutes, since the LED will freeze during NTP synchronization and will retry every 5 seconds after NTP synchronization fails, the clock will freeze every 5 seconds during this period. The clock will freeze noticeably on some clockface (such as Pac Man)  
+`There are many open NTP servers on the Internet, list of high-quality NTP servers:`
+```
+Google:
+time.google.com
+time1.google.com
+time2.google.com
+time3.google.com
+time4.google.com
+
+Cloudflare:
+time.cloudflare.com
+
+Facebook:
+time.facebook.com
+time1.facebook.com
+time2.facebook.com
+time3.facebook.com
+time4.facebook.com
+time5.facebook.com
+
+Microsoft:
+time.windows.com
+
+Apple:
+time.apple.com
+time1.apple.com
+time2.apple.com
+time3.apple.com
+time4.apple.com
+time5.apple.com
+time6.apple.com
+time7.apple.com
+```
 
 ## Use 24h format?
 Whether to use the 24-hour format. If the turned on, the 24-hour format will be used
