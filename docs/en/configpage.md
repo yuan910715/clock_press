@@ -1,6 +1,6 @@
 # Configuration Page
 
-All settings for the clock are completed on the configuration page, the configuration page is provided by the clock. You need to know the IP address of the clock to enter the configuration page
+All settings for the clock are completed on the configuration page, the configuration page is provided by the clock. You need to know the IP address of the clock, access this IP using a mobile phone/PC browser with the same WiFi to enter the configuration page
 
 ## Get IP through LED
 
