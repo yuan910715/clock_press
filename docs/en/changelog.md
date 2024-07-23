@@ -17,6 +17,10 @@
 
 ## Changelog for firmware
 
+### 2024.7.23 v2.2  
+- Add clockface:Transformer
+- NTP optimization
+
 ### 2024.7.8 v2.1  
 - Configuration page optimization
 - Wifi page optimization
