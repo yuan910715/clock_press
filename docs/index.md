@@ -45,6 +45,10 @@ ClockWise是巴西人**Jonathas Barbosa**开发的开源项目，项目代码在
 
 ![Real4](/img/real4.png)
 
+![Real5](/img/real5.png)
+
+![Real6](/img/real6.png)
+
 ![all](/img/all.png)
 
 ## 项目成员

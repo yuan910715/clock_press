@@ -2,6 +2,9 @@
 
 ## Changelog for tutorial
 
+### 2024.8.21 v1.4  
+- Added Brightness adjustment method
+
 ### 2024.7.22 v1.3  
 - Added <a href="https://topyuan.top/clock/en/configpagedetail.html#ntp-server">DO NOT USE pool.ntp.org</a>
 
@@ -16,6 +19,11 @@
 - First written
 
 ## Changelog for firmware
+
+### 2024.8.20 v2.3  
+- Add clockface:Minecraft-Torch
+- Add Swap Blue/Green pins
+- Add Brightness adjustment method
 
 ### 2024.7.23 v2.2  
 - Add clockface:Transformer

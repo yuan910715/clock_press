@@ -45,6 +45,10 @@ The clock has the ability to continuously update, when new firmware is released,
 
 ![Real4](/img/real4.png)
 
+![Real5](/img/real5.png)
+
+![Real6](/img/real6.png)
+
 ![all](/img/all.png)
 
 ## Members

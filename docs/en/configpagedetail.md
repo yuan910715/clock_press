@@ -60,12 +60,21 @@ time7.apple.com
 ## Use 24h format?
 Whether to use the 24-hour format. If the turned on, the 24-hour format will be used
 
-## Display Bright
+## Brightness adjustment method
+- Adjust according to ambient light  
+Automatically adjust brightness based on ambient light values collected by photoresistors
+- Adjust according to time  
+Adjust the brightness by time according to the set night time period
+- Fixed brightness value  
+Fixed value, no adjustment
+
+## Max brightness/Daytime brightness/Brightness value
 Set the display brightness of the LED module
 - 0 - Dark (display off)
 - 255 - Super bright  
-`When automatic brightness adjustment is turned off, this value indicates the actual brightness value of the LED module`  
-`When automatic brightness adjustment is turned on, this value indicates the brightness value at maximum illumination`
+`When Adjust according to ambient light, this value indicates the brightness value at maximum illumination`  
+`When Adjust according to time, this value represents the brightness value during the daytime period`  
+`When Fixed brightness value, this value indicates the actual brightness value of the LED module`  
 
 ## Automatic Bright
 The clock is connected to a LDR, and the collected value will change according to the light intensity. Automatic brightness adjustment can be configured, and the brightness of the LED module will automatically adjust according to the ambient light intensity  
@@ -73,9 +82,6 @@ The two values ​​that need to be configured are
 - **the collected value of the photoresistor when the light is the darkest**
 - **the collected value of the photoresistor when the light is the highest**
 
-Turn on/off:
-- When the maximum value is 0, the automatic brightness adjustment is turned off and the clock will not automatically adjust the brightness
-- When the maximum value is greater than 0, automatic brightness adjustment is turned on  
 `Example：When the configuration is minimum value 0 and maximum value 2000, according to the value collected by the LDR, when it is >=2000, it is adjusted to the maximum brightness, and when it is 0, it is the minimum brightness (the display will not be turned off)`  
 `Example：When the configuration is set to a minimum value of 100 and a maximum value of 2000, the light is adjusted to the maximum brightness when LDR value >=2000, the minimum brightness when LDR value is 100, and the display is turned off when LDR value <100. This is suitable for use in bedrooms where the clock needs to be turned off in dim light`  
 `When GL5539 photoresistor + 10K voltage divider resistor is used, the best maximum value is set to 1800-2700. Please adjust according to actual needs`
@@ -83,6 +89,14 @@ Turn on/off:
 ## LDR Pin
 Here you can get the current LDR collection value in real time  
 `You can test it by covering the photoresistor with your hand and collecting the value`
+
+## Night settings
+- Night brightness level  
+When Adjust according to time, the brightness level during the nighttime period. Set to 0 means turn off the display
+- Night mode starts  
+Start time of night mode
+- Night mode ends  
+End time of night mode
 
 ## Rotation
 LED rotates to suit different placements
