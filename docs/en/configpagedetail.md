@@ -15,10 +15,14 @@ Erase the WiFi information recorded by the clock
 Restart the clock immediately
 
 ## Timezone
-Configure your time zone. Examples:Asia/Shanghai, America/Sao_Paulo, Europe/Lisbon  
-The clock will automatically connect to the remote server to convert Asia/Shanghai, America/Sao_Paulo, Europe/Lisbon to the corresponding POSIX time zone expressions  
-`For example, Asia/Shanghai will be converted to CST-8, which means it is 8 hours ahead of UTC time zone`  
-`POSIX time zone expressions with daylight saving time are more complicated; see the POSIX Timezone String section for more details`
+Set your timezone  
+- Single timezone  
+Suitable for countries/regions with a single time zone, simply drag the slider or manually enter  
+`eg:+8:00`
+- Smart DST timezone  
+For countries/regions that are suitable for using daylight saving time, a POSIX time zone string needs to be defined. Posix defines the time zones for standard time, daylight saving time, and when daylight saving time starts and ends  
+If you need to learn more about POSIX, please visit https://github.com/yuan910715/Esp8266_Wifi_Matrix_Clock/blob/master/posix.md  
+`eg:CST6CDT,M3.2.0,M11.1.0`  
 
 ## NTP Server
 Set the NTP server address(default:ntp2.aliyun.com), the clock will synchronize with this NTP server. If the configuration is wrong, the clock will not be able to synchronize, the time will start from 1970-1-1 8:00  
@@ -103,11 +107,6 @@ LED rotates to suit different placements
 
 ## Clock Face
 Change clockface
-
-## POSIX Timezone String
-Manually configure the POSIX time zone string. This is an advanced configuration, used when the time zone is invalid or you want to customize the daylight saving time configuration. This configuration will override the time zone configuration  
-POSIX strings define standard time zone, daylight saving time zone, daylight saving time start time, and daylight saving time end time. If you need to learn more about POSIX, please visit https://github.com/yuan910715/Esp8266_Wifi_Matrix_Clock/blob/master/posix.md  
-`Leave this blank to automatically get the POSIX time zone string from the server based on the time zone`  
 
 ## Language
 Change the configuration page language

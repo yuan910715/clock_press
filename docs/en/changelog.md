@@ -2,6 +2,9 @@
 
 ## Changelog for tutorial
 
+### 2024.8.29 v1.5  
+- Adjust the configuration instructions of Timezone
+
 ### 2024.8.21 v1.4  
 - Added Brightness adjustment method
 
@@ -19,6 +22,9 @@
 - First written
 
 ## Changelog for firmware
+
+### 2024.8.29 v2.4  
+- Timezone optimization
 
 ### 2024.8.20 v2.3  
 - Add clockface:Minecraft-Torch

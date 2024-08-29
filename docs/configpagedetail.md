@@ -15,10 +15,14 @@
 立即重启时钟
 
 ## 时区
-配置你的时区, 如:Asia/Shanghai, America/Sao_Paulo, Europe/Lisbon  
-时钟内部会自动连接远程服务器将Asia/Shanghai, America/Sao_Paulo, Europe/Lisbon转为相应POSIX时区表达式使用  
-`如Asia/Shanghai会转换为CST-8 表示比UTC时区提前8小时`  
-`带有夏令时的POSIX时区表达式会更为复杂，详见POSIX时区字符串章节`
+配置你的时区  
+- 单一时区模式  
+适合使用单一时区的国家/地区，拖动滑块或手动输入即可  
+`如+8:00`
+- 智能夏令时模式  
+适合使用夏令时的国家/地区，需定义POSIX时区字符串，Posix定义了标准时的时区、夏令时的时区、夏令时从何时开始何时结束  
+我国未施行夏令时，如果你需了解更多关于POSIX的知识，请访问 https://github.com/yuan910715/Esp8266_Wifi_Matrix_Clock/blob/master/posix.md  
+`如CST6CDT,M3.2.0,M11.1.0`  
 
 ## NTP自动对时服务器
 设置NTP服务器地址(默认值ntp2.aliyun.com)，时钟和此NTP服务器同步时间，如配置错误，时钟将无法对时，从1970-1-1 8:00开始走时  
@@ -89,11 +93,6 @@ LED旋转，以适应不同摆放
 
 ## 表盘皮肤
 更换表盘皮肤
-
-## POSIX时区字符串
-手动配置POSIX时区字符串，这是一项高级配置, 用于在时区无效或你想自定义夏令时配置，这项配置会覆盖时区配置  
-POSIX字符串定义了标准时时区、夏令时时区、夏令时开始时间、夏令时结束时间，我国未施行夏令时，如果你需了解更多关于POSIX的知识，请访问 https://github.com/yuan910715/Esp8266_Wifi_Matrix_Clock/blob/master/posix.md  
-`留空此项将根据时区自动从服务器获取POSIX时区字符串`  
 
 ## 语言选项
 更换配置页语言
