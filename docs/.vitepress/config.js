@@ -43,6 +43,10 @@ export default {
                     {
                         text: "更新日志",
                         link: "/changelog.md"
+                    },
+                    {
+                        text: "全球在线设备",
+                        link: "https://topyuan.top/ledhub75/map/online"
                     }
                 ],
                 docFooter: {
@@ -99,6 +103,10 @@ export default {
                     {
                         text: "Changelog",
                         link: "/en/changelog.md"
+                    },
+                    {
+                        text: "Global online devices",
+                        link: "https://topyuan.top/ledhub75/map/online"
                     }
                 ],
                 outline: [1,4],
