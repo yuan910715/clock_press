@@ -23,6 +23,10 @@
 
 ## Changelog for firmware
 
+### 2024.9.14 v2.5  
+- Fix bug:the map resets when there are still foods in Pac Man
+- Fix bug:cancel the use 24 hour settings is invalid for some clockfaces
+
 ### 2024.8.29 v2.4  
 - Timezone optimization
 
