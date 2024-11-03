@@ -2,6 +2,9 @@
 
 ## Changelog for tutorial
 
+### 2024.11.3 v1.6  
+- Add the configuration instructions of auto change clockface 
+
 ### 2024.8.29 v1.5  
 - Adjust the configuration instructions of Timezone
 
@@ -22,6 +25,11 @@
 - First written
 
 ## Changelog for firmware
+
+### 2024.11.3 v2.6
+- NTP optimization
+- Add GBR LED
+- Add Auto Change Clock Face
 
 ### 2024.9.14 v2.5  
 - Fix bug:the map resets when there are still foods in Pac Man

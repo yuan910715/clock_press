@@ -108,6 +108,9 @@ LED rotates to suit different placements
 ## Clock Face
 Change clockface
 
+## Auto Change Clock Face
+Automatically change the clockface at 0:00 every day, sequence or random
+
 ## Language
 Change the configuration page language
 
