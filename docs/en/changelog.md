@@ -26,6 +26,10 @@
 
 ## Changelog for firmware
 
+### 2025.1.4 v2.7
+- Add clockface:Coffee
+- Fix bug:automatic brightness failure after prolonged operation
+
 ### 2024.11.3 v2.6
 - NTP optimization
 - Add GBR LED
