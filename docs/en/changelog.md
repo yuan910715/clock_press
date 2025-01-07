@@ -26,6 +26,9 @@
 
 ## Changelog for firmware
 
+### 2025.1.7 v2.8
+- Web UI Selection for clkphase display
+
 ### 2025.1.4 v2.7
 - Add clockface:Coffee
 - Fix bug:automatic brightness failure after prolonged operation
