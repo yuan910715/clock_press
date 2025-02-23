@@ -111,6 +111,11 @@ Change clockface
 ## Auto Change Clock Face
 Automatically change the clockface at 0:00 every day, sequence or random
 
+## Special LED
+For differcent Leds  
+If your LED color is wrong, please adjust the color option  
+If your LED has ghosting or misalignment, please try adjusting the reverse phase
+
 ## Language
 Change the configuration page language
 

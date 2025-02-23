@@ -2,6 +2,9 @@
 
 ## Changelog for tutorial
 
+### 2024.2.23 v1.7  
+- Add the configuration instructions of special led 
+
 ### 2024.11.3 v1.6  
 - Add the configuration instructions of auto change clockface 
 
@@ -25,6 +28,10 @@
 - First written
 
 ## Changelog for firmware
+
+### 2025.2.23 v2.81
+- Add clockface:Pepsi
+- Add Reverse phase
 
 ### 2025.1.4 v2.7
 - Add clockface:Coffee
