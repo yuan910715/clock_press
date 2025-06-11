@@ -82,17 +82,32 @@ Set the display brightness of the LED module
 
 ## Automatic Bright
 The clock is connected to a LDR, and the collected value will change according to the light intensity. Automatic brightness adjustment can be configured, and the brightness of the LED module will automatically adjust according to the ambient light intensity  
-The two values ​​that need to be configured are 
-- **the collected value of the photoresistor when the light is the darkest**
-- **the collected value of the photoresistor when the light is the highest**
+The value is **the collected value of the photoresistor when the light is the highest**  
+- Default : 2000  
+The clock will be divided into 10 brightness levels. Example: default 2000, the collected value of per 200 is a brightness level, the value affects the sensitivity of automatic brightness adjustment  
+`If this value is too small, the clock will still maintain a high brightness level even when the ambient light is low`  
+`If this value is too high, the clock will still maintain a low brightness level even in high ambient light`  
 
-`Example：When the configuration is minimum value 0 and maximum value 2000, according to the value collected by the LDR, when it is >=2000, it is adjusted to the maximum brightness, and when it is 0, it is the minimum brightness (the display will not be turned off)`  
-`Example：When the configuration is set to a minimum value of 100 and a maximum value of 2000, the light is adjusted to the maximum brightness when LDR value >=2000, the minimum brightness when LDR value is 100, and the display is turned off when LDR value <100. This is suitable for use in bedrooms where the clock needs to be turned off in dim light`  
-`When GL5539 photoresistor + 10K voltage divider resistor is used, the best maximum value is set to 1800-2700. Please adjust according to actual needs`
-
-## LDR Pin
-Here you can get the current LDR collection value in real time  
+Read LDR value  
+- Here you can get the current LDR collection value in real time  
 `You can test it by covering the photoresistor with your hand and collecting the value`
+
+Night strategy  
+- Nothing  
+Do nothing
+- Turn off led  
+Turn off led, until the light intensity increases
+- Display big clock  
+Display big clock, until the light intensity increases 
+
+Night LDR value  
+- When the collected value of the LDR is less than this value, the LED will execute a night strategy, Default : 30  
+`If the ambient light is too high at night to enter night mode, you can increase this value appropriately`  
+`If clock enter night mode at daytime, you can reduce this value appropriately`  
+`If the night mode still does not exit after the light is restored, this value can be appropriately reduced`
+
+Big clock color  
+- Configure the font color of the big clock, choose from pre made common colors or fill in RGB565 color values by yourself
 
 ## Night settings
 - Night brightness level  
@@ -101,6 +116,17 @@ When Adjust according to time, the brightness level during the nighttime period.
 Start time of night mode
 - Night mode ends  
 End time of night mode
+
+Night strategy  
+- Nothing  
+Do nothing
+- Turn off led  
+Turn off led, until end time of night mode
+- Display big clock  
+Display big clock, until end time of night mode
+
+Big clock color  
+- Configure the font color of the big clock, choose from pre made common colors or fill in RGB565 color values by yourself
 
 ## Rotation
 LED rotates to suit different placements

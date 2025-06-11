@@ -2,7 +2,10 @@
 
 ## Changelog for tutorial
 
-### 2024.2.23 v1.7  
+### 2025.6.11 v1.8  
+- Add the configuration instructions of night strategy
+
+### 2025.2.23 v1.7  
 - Add the configuration instructions of special led 
 
 ### 2024.11.3 v1.6  
@@ -28,6 +31,12 @@
 - First written
 
 ## Changelog for firmware
+
+### 2025.6.11 v2.9
+- Add clockface:Pikachu,Shar Pei Dog,Girl,Kirby,Labubu-Zimomo,Hello Kitty
+- Add Night strategy
+- Add big clock
+- Optimize some clockface time flashing issues
 
 ### 2025.2.23 v2.81
 - Add clockface:Pepsi
