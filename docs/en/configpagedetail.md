@@ -111,7 +111,7 @@ Big clock color
 
 ## Night settings
 - Night brightness level  
-When Adjust according to time, the brightness level during the nighttime period. Set to 0 means turn off the display
+When Adjust according to time, the brightness level during the nighttime period
 - Night mode starts  
 Start time of night mode
 - Night mode ends  

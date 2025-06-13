@@ -24,22 +24,28 @@ export default {
                 ],
                 sidebar: [
                     {
-                        text: "关于",
+                        text: "快速开始",
                         items:[
-                            {text: "简介",link: "/"},
-                            {text: "硬件",link: "/hardware.md"},
-                            {text: "摆放方式",link: "/put.md"},
-                            {text: "联系我",link: "/contact.md"}
+                            {text: "摆放方式",link: "/"},
+                            {text: "配置网络",link: "/wifi.md"},
+                            {text: "进入配置页",link: "/configpage.md"}
                         ]
-                    },                
+                    },
                     {
                         text: "使用说明",
-                        items:[
-                            {text: "配置网络",link: "/wifi.md"},
-                            {text: "进入配置页",link: "/configpage.md"},
+                        items:[                           
                             {text: "配置页详解",link: "/configpagedetail.md"}
                         ]
                     },
+                    {
+                        text: "关于",
+                        items:[
+                            {text: "项目介绍",link: "/project.md"},
+                            {text: "硬件",link: "/hardware.md"},
+                            {text: "联系我",link: "/contact.md"}
+                        ]
+                    },                
+                   
                     {
                         text: "更新日志",
                         link: "/changelog.md"
@@ -84,20 +90,25 @@ export default {
                 ],
                 sidebar: [
                     {
-                        text: "About",
+                        text: "Quick Start",
                         items:[
-                            {text: "Introduction",link: "/en/index.md"},
-                            {text: "Hardware",link: "/en/hardware.md"},
-                            {text: "Placement",link: "/en/put.md"},
-                            {text: "Contact Me",link: "/en/contact.md"}
+                            {text: "Placement",link: "/en/index.md"},
+                            {text: "Setup WiFi",link: "/en/wifi.md"},
+                            {text: "Configuration Page",link: "/en/configpage.md"}
                         ]
-                    },                
+                    },
                     {
                         text: "Instructions",
-                        items:[
-                            {text: "Setup WiFi",link: "/en/wifi.md"},
-                            {text: "Configuration Page",link: "/en/configpage.md"},
+                        items:[                           
                             {text: "Configuration Details",link: "/en/configpagedetail.md"}
+                        ]
+                    },
+                    {
+                        text: "About",
+                        items:[
+                            {text: "Introduction",link: "/en/project.md"},
+                            {text: "Hardware",link: "/en/hardware.md"},
+                            {text: "Contact Me",link: "/en/contact.md"}
                         ]
                     },
                     {

@@ -4,7 +4,7 @@
 
 ## 通过topyuan获取IP
 
-你也可以访问https://topyuan.top/clock/find 服务器会给出你的时钟IP  
+访问https://topyuan.top/clock/find 服务器会给出你的时钟IP  
 `此功能通过判断访问者公网IP和时钟上报时的公网IP对比来判断返回哪个时钟的本地IP，访问此页面的设备需和时钟处在同一WiFi下`
 
 ## 通过LED获取IP
