@@ -2,7 +2,7 @@
 
 ## Tencent QQ group
 
-6536394
+936535764
 
 ## Telegram Group
 
