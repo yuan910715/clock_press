@@ -32,6 +32,9 @@
 
 ## 时钟固件更新日志
 
+### 2025.11.22 v3.0
+- 新增Twinkle Twinkle表盘
+
 ### 2025.6.11 v2.9
 - 新增Pikachu,Shar Pei Dog,Girl,Kirby,Labubu-Zimomo,Hello Kitty表盘
 - 新增夜间策略

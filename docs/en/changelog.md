@@ -32,6 +32,9 @@
 
 ## Changelog for firmware
 
+### 2025.11.22 v3.0
+- Add clockface:Twinkle Twinkle
+
 ### 2025.6.11 v2.9
 - Add clockface:Pikachu,Shar Pei Dog,Girl,Kirby,Labubu-Zimomo,Hello Kitty
 - Add Night strategy
