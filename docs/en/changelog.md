@@ -32,6 +32,9 @@
 
 ## Changelog for firmware
 
+### 2025.12.13 v3.1
+- Add clockface:Zootopia
+
 ### 2025.11.22 v3.0
 - Add clockface:Twinkle Twinkle
 
