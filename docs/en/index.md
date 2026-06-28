@@ -1,7 +1,7 @@
 # Quick Start
 
 If this is your first time using it, you can access<a href="https://topyuan.top/clock/wifi">Setup WiFi</a>  
-If you have completed the configuration, you can access<a href="https://topyuan.top/clock/find">Find My Clock</a>  
+If you have completed the configuration, you can access<a href="https://topyuan.top/clock/find" target="_blank">Find My Clock</a>  
 
 ## All Clockfaces
 <div class="clockface-grid">
