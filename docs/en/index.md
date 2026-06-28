@@ -5,55 +5,47 @@ If you have completed the configuration, you can access<a href="https://topyuan.
 
 ## All Clockfaces
 <div class="clockface-grid">
-  <img src="/img/clockfaces/24_rainy_window.gif" alt="24_rainy_window" />
-  <img src="/img/clockfaces/23_codex.gif" alt="23_codex" />
-  <img src="/img/clockfaces/22_minecraft_village.gif" alt="22_minecraft_village" />
-  <img src="/img/clockfaces/21_zootopia.gif" alt="21_zootopia" />
-  <img src="/img/clockfaces/20_twinkle.gif" alt="20_twinkle" />
-  <img src="/img/clockfaces/19_hello_kitty.gif" alt="19_hello_kitty" />
-  <img src="/img/clockfaces/18_labubu_zimomo.gif" alt="18_labubu_zimomo" />
-  <img src="/img/clockfaces/17_kirby.gif" alt="17_kirby" />
-  <img src="/img/clockfaces/16_girl.gif" alt="16_girl" />
-  <img src="/img/clockfaces/15_sharpeidog.gif" alt="15_sharpeidog" />
-  <img src="/img/clockfaces/14_pikachu.gif" alt="14_pikachu" />
-  <img src="/img/clockfaces/13_pepsi.gif" alt="13_pepsi" />
-  <img src="/img/clockfaces/12_coffee.gif" alt="12_coffee" />
-  <img src="/img/clockfaces/11_mc_torch.gif" alt="11_mc_torch" />
-  <img src="/img/clockfaces/10_transformer.gif" alt="10_transformer" />
-  <img src="/img/clockfaces/09_nyan_cat.gif" alt="09_nyan_cat" />
-  <img src="/img/clockfaces/08_snoopy.gif" alt="08_snoopy" />
-  <img src="/img/clockfaces/07_retro_computer.gif" alt="07_retro_computer" />
-  <img src="/img/clockfaces/06_pokedex.gif" alt="06_pokedex" />
-  <img src="/img/clockfaces/05_clock_tower.gif" alt="05_clock_tower" />
-  <img src="/img/clockfaces/04_time_in_word.gif" alt="04_time_in_word" />
-  <img src="/img/clockfaces/03_worldmap.gif" alt="03_worldmap" />
-  <img src="/img/clockfaces/02_pacman.gif" alt="02_pacman" />
-  <img src="/img/clockfaces/01_supermario.gif" alt="01_supermario" />
+  <img src="/img/clockfaces/24_rainy_window.webp" alt="24_rainy_window" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/23_codex.webp" alt="23_codex" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/22_minecraft_village.webp" alt="22_minecraft_village" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/21_zootopia.webp" alt="21_zootopia" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/20_twinkle.webp" alt="20_twinkle" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/19_hello_kitty.webp" alt="19_hello_kitty" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/18_labubu_zimomo.webp" alt="18_labubu_zimomo" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/17_kirby.webp" alt="17_kirby" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/16_girl.webp" alt="16_girl" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/15_sharpeidog.webp" alt="15_sharpeidog" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/14_pikachu.webp" alt="14_pikachu" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/13_pepsi.webp" alt="13_pepsi" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/12_coffee.webp" alt="12_coffee" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/11_mc_torch.webp" alt="11_mc_torch" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/10_transformer.webp" alt="10_transformer" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/09_nyan_cat.webp" alt="09_nyan_cat" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/08_snoopy.webp" alt="08_snoopy" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/07_retro_computer.webp" alt="07_retro_computer" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/06_pokedex.webp" alt="06_pokedex" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/05_clock_tower.webp" alt="05_clock_tower" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/04_time_in_word.webp" alt="04_time_in_word" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/03_worldmap.webp" alt="03_worldmap" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/02_pacman.webp" alt="02_pacman" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/01_supermario.webp" alt="01_supermario" loading="lazy" decoding="async" />
 </div>
 
 ## Photos
 
-![waike](/img/waike.jpg)
-
-![1](/img/1.jpg)
-
-![2](/img/2.jpg)
-
-![night](/img/night.jpg)
-
-![8](/img/8.jpg)
-
-![10](/img/10.jpg)
-
-![19](/img/19.jpg)
-
-![20](/img/20.jpg)
-
-![21](/img/21.jpg)
-
-![waike1](/img/waike1.jpg)
-
-![put5](/img/put5.png)
+<div class="photo-list">
+  <img src="/img/waike.webp" alt="waike" loading="lazy" decoding="async" />
+  <img src="/img/1.webp" alt="1" loading="lazy" decoding="async" />
+  <img src="/img/2.webp" alt="2" loading="lazy" decoding="async" />
+  <img src="/img/night.webp" alt="night" loading="lazy" decoding="async" />
+  <img src="/img/8.webp" alt="8" loading="lazy" decoding="async" />
+  <img src="/img/10.webp" alt="10" loading="lazy" decoding="async" />
+  <img src="/img/19.webp" alt="19" loading="lazy" decoding="async" />
+  <img src="/img/20.webp" alt="20" loading="lazy" decoding="async" />
+  <img src="/img/21.webp" alt="21" loading="lazy" decoding="async" />
+  <img src="/img/waike1.webp" alt="waike1" loading="lazy" decoding="async" />
+  <img src="/img/put5.webp" alt="put5" loading="lazy" decoding="async" />
+</div>
 
 <style scoped>
 .clockface-grid {
@@ -67,5 +59,15 @@ If you have completed the configuration, you can access<a href="https://topyuan.
   max-width: 220px;
   height: auto;
   justify-self: center;
+}
+
+.photo-list {
+  display: grid;
+  gap: 24px;
+}
+
+.photo-list img {
+  width: 100%;
+  height: auto;
 }
 </style>
