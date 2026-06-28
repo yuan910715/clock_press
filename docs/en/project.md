@@ -52,24 +52,3 @@ The clock has the ability to continuously update, when new firmware is released,
 ![Real6](/img/real6.png)
 
 ![all](/img/all.png)
-
-## Members
-
-<script setup>
-import { VPTeamMembers } from 'vitepress/theme'
-
-const members = [
-  {
-    avatar: 'https://topyuan.top/yuan.png',
-    name: 'Felix Feng',
-    title: 'Creator',
-    links: [
-      { icon: 'github', link: 'https://github.com/yuan910715' }
-    ]
-  },
-]
-</script>
-
-<VPTeamMembers size="small" :members="members" />
-
-Hope you can join

@@ -25,3 +25,67 @@ ESP32包含一个分区表，将芯片空间划分为不同区域，在OTA更新
 ![old](/img/new.svg)
 
 `在新版本分区表下，还有大量空间可以用于OTA`
+
+## 感谢
+
+感谢你的使用，希望你喜欢本项目！
+
+<div class="project-member-card">
+  <img class="project-member-avatar" src="/img/member_feng.jpg" alt="Felix Feng" />
+  <div class="project-member-info">
+    <div class="project-member-name">冯雪原</div>
+    <div class="project-member-title"><a href="mailto:admin@topyuan.top">admin@topyuan.top</a></div>
+    <a class="project-member-link" href="https://github.com/yuan910715" target="_blank" rel="noreferrer">GitHub</a>
+  </div>
+</div>
+
+<style scoped>
+.project-member-card {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.project-member-avatar {
+  width: 220px;
+  aspect-ratio: 1 / 1.12;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: 58% top;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.project-member-info {
+  min-width: 0;
+}
+
+.project-member-name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.project-member-title {
+  margin-top: 6px;
+  color: var(--vp-c-text-2);
+}
+
+.project-member-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .project-member-card {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .project-member-avatar {
+    width: min(100%, 240px);
+  }
+}
+</style>

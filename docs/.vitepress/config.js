@@ -12,7 +12,7 @@ export default {
             nav: [
                 { text: '时钟固件安装', link: 'https://topyuan.top/clock/install' },
                 { text: '查找我的时钟', link: 'https://topyuan.top/clock/find' },
-                { text: '购买', link: 'https://item.taobao.com/item.htm?id=819749204016&skuId=5522802452567' },
+                { text: '购买(暂时售罄)', link: 'https://item.taobao.com/item.htm?id=819749204016&skuId=5522802452567' },
             ],
             socialLinks: [
                 {icon: "github", link: "https://github.com/yuan910715"},
