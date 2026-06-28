@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360">
+  <defs>
+    <linearGradient id="updater" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="main" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+    <style>
+      .title { font: 800 30px "Segoe UI", "Microsoft YaHei", Arial, sans-serif; fill: #0f172a; }
+      .sub { font: 600 18px "Segoe UI", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .label { font: 800 20px "Segoe UI", "Microsoft YaHei", Arial, sans-serif; fill: white; }
+      .small { font: 600 15px "Segoe UI", "Microsoft YaHei", Arial, sans-serif; fill: white; }
+      .dark { font: 700 14px "Segoe UI", "Microsoft YaHei", Arial, sans-serif; fill: #0f172a; }
+      .note { font: 800 17px "Segoe UI", "Microsoft YaHei", Arial, sans-serif; fill: #047857; }
+    </style>
+  </defs>
+
+  <rect width="720" height="360" fill="#f8fafc"/>
+  <text x="28" y="48" class="title">新分区 partitions_migrated.csv</text>
+  <text x="28" y="78" class="sub">网页手动刷入后：主程序分区扩大，后续继续 OTA</text>
+
+  <!-- Scale: 620px = 4MB flash -->
+  <g transform="translate(50,125)">
+    <rect x="0" y="0" width="620" height="64" rx="10" fill="#e2e8f0"/>
+    <rect x="0" y="0" width="10" height="64" rx="10" fill="#64748b"/>
+    <rect x="10" y="0" width="155" height="64" fill="url(#updater)"/>
+    <rect x="165" y="0" width="445" height="64" fill="url(#main)"/>
+    <rect x="610" y="0" width="10" height="64" fill="#ef4444"/>
+
+    <text x="5" y="-8" class="dark" text-anchor="middle">sys</text>
+    <text x="88" y="27" class="label" text-anchor="middle">app0 updater</text>
+    <text x="88" y="50" class="small" text-anchor="middle">1,048,576 B</text>
+    <text x="388" y="27" class="label" text-anchor="middle">app1 main firmware</text>
+    <text x="388" y="50" class="small" text-anchor="middle">3,014,656 B</text>
+  </g>
+
+  <g transform="translate(50,235)">
+    <rect x="0" y="0" width="620" height="86" rx="14" fill="#dcfce7"/>
+    <text x="24" y="34" class="note">app1 扩大到 3,014,656 B</text>
+    <text x="24" y="63" class="sub">app0 保留 1MB updater，其余空间让给主程序</text>
+  </g>
+</svg>

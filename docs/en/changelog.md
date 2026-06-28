@@ -2,6 +2,10 @@
 
 ## Changelog for tutorial
 
+### 2026.6.28 v1.9  
+- Placement->Start, add all clockface gif
+- Add v3.23 <a href="https://topyuan.top/clock/en/t">Manual update</a>
+
 ### 2025.6.11 v1.8  
 - Add the configuration instructions of night strategy
 
@@ -31,6 +35,17 @@
 - First written
 
 ## Changelog for firmware
+
+### 2026.6.28 v4.0
+- Rewrite partition
+- Add clockface:Rainy Window
+
+### 2026.6.28 v3.23 v4.0
+- Add QR Clock for manual update
+
+### 2026.6.10 v3.2
+- Add clockface(made by Codex):Minecraft-Village,Codex
+- Improve the smoothness:Transformer
 
 ### 2025.12.13 v3.1
 - Add clockface:Zootopia

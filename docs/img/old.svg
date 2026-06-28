@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360">
+  <defs>
+    <linearGradient id="app" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="spiffs" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <style>
+      .title { font: 800 30px "Segoe UI", "Microsoft YaHei", Arial, sans-serif; fill: #0f172a; }
+      .sub { font: 600 18px "Segoe UI", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .label { font: 800 20px "Segoe UI", "Microsoft YaHei", Arial, sans-serif; fill: white; }
+      .small { font: 600 15px "Segoe UI", "Microsoft YaHei", Arial, sans-serif; fill: white; }
+      .dark { font: 700 14px "Segoe UI", "Microsoft YaHei", Arial, sans-serif; fill: #0f172a; }
+      .note { font: 800 17px "Segoe UI", "Microsoft YaHei", Arial, sans-serif; fill: #dc2626; }
+    </style>
+  </defs>
+
+  <rect width="720" height="360" fill="#f8fafc"/>
+  <text x="28" y="48" class="title">旧版本分区 default.csv</text>
+  <text x="28" y="78" class="sub">两个 app 分区相同大小，还有未使用的 SPIFFS</text>
+
+  <!-- Scale: 620px = 4MB flash -->
+  <g transform="translate(50,125)">
+    <rect x="0" y="0" width="620" height="64" rx="10" fill="#e2e8f0"/>
+    <rect x="0" y="0" width="10" height="64" rx="10" fill="#64748b"/>
+    <rect x="10" y="0" width="192" height="64" fill="url(#app)"/>
+    <rect x="202" y="0" width="192" height="64" fill="url(#app)" opacity="0.86"/>
+    <rect x="394" y="0" width="216" height="64" fill="url(#spiffs)"/>
+    <rect x="610" y="0" width="10" height="64" fill="#ef4444"/>
+
+    <text x="5" y="-8" class="dark" text-anchor="middle">sys</text>
+    <text x="106" y="27" class="label" text-anchor="middle">app0</text>
+    <text x="106" y="50" class="small" text-anchor="middle">1,310,720 B</text>
+    <text x="298" y="27" class="label" text-anchor="middle">app1</text>
+    <text x="298" y="50" class="small" text-anchor="middle">1,310,720 B</text>
+    <text x="502" y="27" class="label" text-anchor="middle">SPIFFS</text>
+    <text x="502" y="50" class="small" text-anchor="middle">1,441,792 B</text>
+  </g>
+
+  <g transform="translate(50,235)">
+    <rect x="0" y="0" width="620" height="86" rx="14" fill="#fee2e2"/>
+    <text x="24" y="34" class="note">当前 v3.23 约 1,304,304 B</text>
+    <text x="24" y="63" class="sub">旧 app 分区只剩约 6,416 B，后续几乎已无法 OTA</text>
+  </g>
+</svg>

@@ -6,8 +6,8 @@ export default {
         root: {
           label: '简体中文',
           lang: 'zh-CN',
-          title: 'ClockWise时钟升级版教程',
-          description: 'ClockWise时钟升级版教程',
+          title: 'ClockWise Plus时钟教程',
+          description: 'ClockWise Plus时钟教程',
           themeConfig: {
             nav: [
                 { text: '时钟固件安装', link: 'https://topyuan.top/clock/install' },
@@ -26,7 +26,7 @@ export default {
                     {
                         text: "快速开始",
                         items:[
-                            {text: "摆放方式",link: "/"},
+                            {text: "开始",link: "/"},
                             {text: "配置网络",link: "/wifi.md"},
                             {text: "进入配置页",link: "/configpage.md"}
                         ]
@@ -92,7 +92,7 @@ export default {
                     {
                         text: "Quick Start",
                         items:[
-                            {text: "Placement",link: "/en/index.md"},
+                            {text: "Start",link: "/en/index.md"},
                             {text: "Setup WiFi",link: "/en/wifi.md"},
                             {text: "Configuration Page",link: "/en/configpage.md"}
                         ]
