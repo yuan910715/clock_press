@@ -1,7 +1,7 @@
 # 快速开始
 
-如果你是首次使用，可访问<a href="https://topyuan.top/clock/wifi">配置网络</a>  
-如你已经完成配置，可访问<a href="https://topyuan.top/clock/find" target="_blank">查找我的时钟</a>  
+如果你是首次使用，可访问 <a href="https://topyuan.top/clock/wifi">配置网络</a>  
+如你已经完成配置，可访问 <a href="https://topyuan.top/clock/find" target="_blank">查找我的时钟</a>  
 
 ## 表盘全览
 <div class="clockface-grid">

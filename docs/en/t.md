@@ -3,7 +3,7 @@
 
 This project has long relied on automatic push updates. However, the current version is no longer able to perform automatic upgrades due to firmware limitations. I have redesigned the program, and you will need to perform a manual upgrade. The upgraded version will still support automatic OTA updates  
 
-Simply connect the chip to your computer using a USB cable, open https://topyuan.top/clock/installnew_en in the Chrome browser, and click the button to flash the new program 
+Simply connect the chip to your computer using a USB cable, open https://topyuan.top/clock/installnew_en in the **Chrome browser**, and click the button to flash the new program 
 
 `Please ensure that you connect the ESP32 chip to your computer using a USB data cable, as shown in the image below, and not directly connect it to the computer using a power cable (the power cable is only for power supply and cannot transmit data)`
 ![usb](/img/usb.jpg)

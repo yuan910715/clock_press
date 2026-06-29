@@ -3,7 +3,7 @@ Change to <a href='https://topyuan.top/clock/en/t'>English</a>
 
 本项目长期以来，均为推送自动更新，现有版本因固件限制已无法完成自动升级，我已重新设计了程序，需要你进行一次手动升级，升级后的版本仍保持自动OTA更新 
 
-你只需使用usb线，将芯片与你的电脑连接，使用Chrome浏览器打开https://topyuan.top/clock/installnew 点击按钮刷入新版程序即可 
+你只需使用usb线，将芯片与你的电脑连接，使用**Chrome浏览器**打开https://topyuan.top/clock/installnew 点击按钮刷入新版程序即可 
 
 `请确保你使用USB数据线连接ESP32芯片端至电脑，如下图，而非直接使用供电线连接至电脑(供电线仅供电使用，无法传输数据)`
 ![usb](/img/usb.jpg)
