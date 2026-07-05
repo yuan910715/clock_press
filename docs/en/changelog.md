@@ -36,11 +36,14 @@
 
 ## Changelog for firmware
 
+### 2026.7.4 v4.1
+- Add clockface:GTA VI
+
 ### 2026.6.28 v4.0
 - Rewrite partition
 - Add clockface:Rainy Window
 
-### 2026.6.28 v3.23 v4.0
+### 2026.6.28 v3.23
 - Add QR Clock for manual update
 
 ### 2026.6.10 v3.2

@@ -42,7 +42,7 @@
 
   <g transform="translate(50,235)">
     <rect x="0" y="0" width="620" height="86" rx="14" fill="#fee2e2"/>
-    <text x="24" y="34" class="note">当前 v3.23 约 1,304,304 B</text>
+    <text x="24" y="34" class="note">当前 v3.24 约 1,304,304 B</text>
     <text x="24" y="63" class="sub">旧 app 分区只剩约 6,416 B，后续几乎已无法 OTA</text>
   </g>
 </svg>

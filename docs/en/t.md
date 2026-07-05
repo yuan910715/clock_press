@@ -10,13 +10,19 @@ Simply connect the chip to your computer using a USB cable, open https://topyuan
 
 If you don't want to update manually, the current older version will continue to be available, but there will be no more OTA updates for new watch faces, features, etc  
 
+***I strongly recommend that you update. The new version has added the following clockfaces and is continuously being updated via OTA.***
+<div class="clockface-grid">
+  <img src="/img/clockfaces/25_GTA_VI.webp" alt="25_GTA_VI" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/24_rainy_window.webp" alt="24_rainy_window" loading="lazy" decoding="async" />
+</div>
+
 ## Why
 
 The ESP32 contains a partition table that divides the chip space into different regions. During OTA updates, only the app region can be updated, the partition table cannot be rewritten  
 
 The older version used the default partition table, with the clock program running in app0 or app1. Both partitions were the same size, approximately 1310KB. Each time an update was pushed, the data was automatically written to the other partition and the system restarted 
 
-`The current version v3.23 has reached 1304KB`
+`The current version v3.24 has reached 1304KB`
 ![old](/img/old_en.svg)
 
 
@@ -88,5 +94,17 @@ Thank you for using this project, and I hope you enjoy it!
   .project-member-avatar {
     width: min(100%, 240px);
   }
+}
+.clockface-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.clockface-grid img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  justify-self: center;
 }
 </style>

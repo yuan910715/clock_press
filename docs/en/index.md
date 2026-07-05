@@ -5,30 +5,31 @@ If you have completed the configuration, you can access <a href="https://topyuan
 
 ## All Clockfaces
 <div class="clockface-grid">
-  <img src="/img/clockfaces/24_rainy_window.webp" alt="24_rainy_window" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/23_codex.webp" alt="23_codex" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/22_minecraft_village.webp" alt="22_minecraft_village" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/21_zootopia.webp" alt="21_zootopia" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/20_twinkle.webp" alt="20_twinkle" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/19_hello_kitty.webp" alt="19_hello_kitty" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/18_labubu_zimomo.webp" alt="18_labubu_zimomo" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/17_kirby.webp" alt="17_kirby" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/16_girl.webp" alt="16_girl" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/15_sharpeidog.webp" alt="15_sharpeidog" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/14_pikachu.webp" alt="14_pikachu" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/13_pepsi.webp" alt="13_pepsi" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/12_coffee.webp" alt="12_coffee" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/11_mc_torch.webp" alt="11_mc_torch" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/10_transformer.webp" alt="10_transformer" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/09_nyan_cat.webp" alt="09_nyan_cat" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/08_snoopy.webp" alt="08_snoopy" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/07_retro_computer.webp" alt="07_retro_computer" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/06_pokedex.webp" alt="06_pokedex" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/05_clock_tower.webp" alt="05_clock_tower" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/04_time_in_word.webp" alt="04_time_in_word" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/03_worldmap.webp" alt="03_worldmap" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/02_pacman.webp" alt="02_pacman" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/01_supermario.webp" alt="01_supermario" loading="lazy" decoding="async" />
+  <figure><img src="/img/clockfaces/25_GTA_VI.webp" alt="GTA VI" loading="lazy" decoding="async" /><figcaption>GTA VI</figcaption></figure>
+  <figure><img src="/img/clockfaces/24_rainy_window.webp" alt="Rainy Window" loading="lazy" decoding="async" /><figcaption>Rainy Window</figcaption></figure>
+  <figure><img src="/img/clockfaces/23_codex.webp" alt="Codex" loading="lazy" decoding="async" /><figcaption>Codex</figcaption></figure>
+  <figure><img src="/img/clockfaces/22_minecraft_village.webp" alt="Minecraft-Village" loading="lazy" decoding="async" /><figcaption>Minecraft-Village</figcaption></figure>
+  <figure><img src="/img/clockfaces/21_zootopia.webp" alt="Zootopia" loading="lazy" decoding="async" /><figcaption>Zootopia</figcaption></figure>
+  <figure><img src="/img/clockfaces/20_twinkle.webp" alt="Twinkle Twinkle" loading="lazy" decoding="async" /><figcaption>Twinkle Twinkle</figcaption></figure>
+  <figure><img src="/img/clockfaces/19_hello_kitty.webp" alt="Hello Kitty" loading="lazy" decoding="async" /><figcaption>Hello Kitty</figcaption></figure>
+  <figure><img src="/img/clockfaces/18_labubu_zimomo.webp" alt="Labubu-Zimomo" loading="lazy" decoding="async" /><figcaption>Labubu-Zimomo</figcaption></figure>
+  <figure><img src="/img/clockfaces/17_kirby.webp" alt="Kirby" loading="lazy" decoding="async" /><figcaption>Kirby</figcaption></figure>
+  <figure><img src="/img/clockfaces/16_girl.webp" alt="Girl" loading="lazy" decoding="async" /><figcaption>Girl</figcaption></figure>
+  <figure><img src="/img/clockfaces/15_sharpeidog.webp" alt="Shar Pei Dog" loading="lazy" decoding="async" /><figcaption>Shar Pei Dog</figcaption></figure>
+  <figure><img src="/img/clockfaces/14_pikachu.webp" alt="Pikachu" loading="lazy" decoding="async" /><figcaption>Pikachu</figcaption></figure>
+  <figure><img src="/img/clockfaces/13_pepsi.webp" alt="Pepsi" loading="lazy" decoding="async" /><figcaption>Pepsi</figcaption></figure>
+  <figure><img src="/img/clockfaces/12_coffee.webp" alt="Coffee" loading="lazy" decoding="async" /><figcaption>Coffee</figcaption></figure>
+  <figure><img src="/img/clockfaces/11_mc_torch.webp" alt="Minecraft-Torch" loading="lazy" decoding="async" /><figcaption>Minecraft-Torch</figcaption></figure>
+  <figure><img src="/img/clockfaces/10_transformer.webp" alt="Transformer" loading="lazy" decoding="async" /><figcaption>Transformer</figcaption></figure>
+  <figure><img src="/img/clockfaces/09_nyan_cat.webp" alt="Nyan Cat" loading="lazy" decoding="async" /><figcaption>Nyan Cat</figcaption></figure>
+  <figure><img src="/img/clockfaces/08_snoopy.webp" alt="Snoopy" loading="lazy" decoding="async" /><figcaption>Snoopy</figcaption></figure>
+  <figure><img src="/img/clockfaces/07_retro_computer.webp" alt="Retro Computer" loading="lazy" decoding="async" /><figcaption>Retro Computer</figcaption></figure>
+  <figure><img src="/img/clockfaces/06_pokedex.webp" alt="Pokedex" loading="lazy" decoding="async" /><figcaption>Pokedex</figcaption></figure>
+  <figure><img src="/img/clockfaces/05_clock_tower.webp" alt="Clock Tower" loading="lazy" decoding="async" /><figcaption>Clock Tower</figcaption></figure>
+  <figure><img src="/img/clockfaces/04_time_in_word.webp" alt="Time In Words" loading="lazy" decoding="async" /><figcaption>Time In Words</figcaption></figure>
+  <figure><img src="/img/clockfaces/03_worldmap.webp" alt="World Map" loading="lazy" decoding="async" /><figcaption>World Map</figcaption></figure>
+  <figure><img src="/img/clockfaces/02_pacman.webp" alt="Pac Man" loading="lazy" decoding="async" /><figcaption>Pac Man</figcaption></figure>
+  <figure><img src="/img/clockfaces/01_supermario.webp" alt="Super Mario" loading="lazy" decoding="async" /><figcaption>Super Mario</figcaption></figure>
 </div>
 
 ## Developer
@@ -93,6 +94,28 @@ If you have completed the configuration, you can access <a href="https://topyuan
 }
 </style>
 
+## Support Me
+
+<section class="support-section">
+  <p class="support-text">Buy me a coffee</p>
+  <div class="support-qrcodes">
+    <figure class="support-qrcode">
+      <a href="/clock/img/paypal.jpg" target="_blank" rel="noreferrer">
+        <img src="/img/paypal_small.webp" alt="PayPal" loading="lazy" decoding="async" />
+      </a>
+      <figcaption>PayPal</figcaption>
+    </figure>
+    <figure class="support-qrcode">
+      <a href="/clock/img/alipay.jpg" target="_blank" rel="noreferrer">
+        <img src="/img/alipay_small.webp" alt="Alipay" loading="lazy" decoding="async" />
+      </a>
+      <figcaption>Alipay</figcaption>
+    </figure>
+  </div>
+</section>
+
+***This project is completely free, and I have not authorized anyone to sell this clock.***
+
 ## Photos
 
 <div class="photo-list">
@@ -121,6 +144,68 @@ If you have completed the configuration, you can access <a href="https://topyuan
   max-width: 220px;
   height: auto;
   justify-self: center;
+}
+
+.clockface-grid figure {
+  margin: 0;
+  min-width: 0;
+  text-align: center;
+}
+
+.clockface-grid figcaption {
+  margin-top: 8px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.support-section {
+  margin: 16px 0 32px;
+}
+
+.support-text {
+  margin: 0 0 16px;
+  color: var(--vp-c-text-2);
+}
+
+.support-qrcodes {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 75px;
+}
+
+.support-qrcode {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0;
+  width: min(220px, 100%);
+}
+
+.support-qrcode a {
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.support-qrcode a:hover {
+  transform: translateY(-2px);
+}
+
+.support-qrcode img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.support-qrcode figcaption {
+  margin-top: 8px;
+  text-align: center;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
 }
 
 .photo-list {

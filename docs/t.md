@@ -10,13 +10,19 @@ Change to <a href='https://topyuan.top/clock/en/t'>English</a>
 
 如果你不想手动更新，目前的旧版本也一直可用，只是后续再无新的表盘、功能等OTA更新  
 
+**强烈建议你进行更新，新版本已增加如下表盘，并在持续OTA中..**
+<div class="clockface-grid">
+  <img src="/img/clockfaces/25_GTA_VI.webp" alt="25_GTA_VI" loading="lazy" decoding="async" />
+  <img src="/img/clockfaces/24_rainy_window.webp" alt="24_rainy_window" loading="lazy" decoding="async" />
+</div>
+
 ## 为什么
 
 ESP32包含一个分区表，将芯片空间划分为不同区域，在OTA更新时，仅能更新app区域，无法重写分区表 
 
 旧版本使用默认分区表，时钟程序运行在app0或app1中，两个分区大小一致，约为1310KB，每次推送更新时，自动写入另一分区并重启 
 
-`现有版本v3.23已经达到1304KB`
+`现有版本v3.24已经达到1304KB`
 ![old](/img/old.svg)
 
 
@@ -87,5 +93,17 @@ ESP32包含一个分区表，将芯片空间划分为不同区域，在OTA更新
   .project-member-avatar {
     width: min(100%, 240px);
   }
+}
+.clockface-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.clockface-grid img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  justify-self: center;
 }
 </style>
