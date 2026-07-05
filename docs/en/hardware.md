@@ -22,8 +22,11 @@ ESP32 is a high-performance, low-power Wi-Fi and Bluetooth dual-mode system-on-c
 The HUB75 terminal has many connections, I designed an integrated PCB adapter board according to the size of the LED module. While connecting the ESP32 and the HUB75 terminal, I also added a LDR position and added an independent power supply
 ![PCB1](/img/pcb1.png)
 
-HUB75 terminal - ESP32 connection diagram
+HUB75 terminal - ESP32 30pin connection diagram
 ![HUB75](/img/hub75.png)
+
+HUB75 terminal - ESP32 38pin connection diagram
+![HUB75](/img/wire.svg)
 
 ## LDR
 
