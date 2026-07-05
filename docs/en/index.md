@@ -100,19 +100,29 @@ If you have completed the configuration, you can access <a href="https://topyuan
   <p class="support-text">Buy me a coffee</p>
   <div class="support-qrcodes">
     <figure class="support-qrcode">
-      <a href="/clock/img/paypal.jpg" target="_blank" rel="noreferrer">
+      <button class="qrcode-preview-button" type="button" onclick="document.getElementById('paypal-preview').showModal()">
         <img src="/img/paypal_small.webp" alt="PayPal" loading="lazy" decoding="async" />
-      </a>
+      </button>
       <figcaption>PayPal</figcaption>
     </figure>
     <figure class="support-qrcode">
-      <a href="/clock/img/alipay.jpg" target="_blank" rel="noreferrer">
+      <button class="qrcode-preview-button" type="button" onclick="document.getElementById('alipay-preview').showModal()">
         <img src="/img/alipay_small.webp" alt="Alipay" loading="lazy" decoding="async" />
-      </a>
+      </button>
       <figcaption>Alipay</figcaption>
     </figure>
   </div>
 </section>
+
+<dialog id="paypal-preview" class="qrcode-preview-dialog" onclick="if (event.target === this) this.close()">
+  <button class="qrcode-preview-close" type="button" onclick="this.closest('dialog').close()" aria-label="Close">×</button>
+  <img src="/img/paypal_preview.webp" alt="PayPal" loading="lazy" decoding="async" />
+</dialog>
+
+<dialog id="alipay-preview" class="qrcode-preview-dialog" onclick="if (event.target === this) this.close()">
+  <button class="qrcode-preview-close" type="button" onclick="this.closest('dialog').close()" aria-label="Close">×</button>
+  <img src="/img/alipay_preview.webp" alt="Alipay" loading="lazy" decoding="async" />
+</dialog>
 
 ***This project is completely free, and I have not authorized anyone to sell this clock.***
 
@@ -184,21 +194,66 @@ If you have completed the configuration, you can access <a href="https://topyuan
   width: min(220px, 100%);
 }
 
-.support-qrcode a {
+.qrcode-preview-button {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.qrcode-preview-button {
   display: block;
   border-radius: 8px;
   transition: transform 0.2s ease;
 }
 
-.support-qrcode a:hover {
+.qrcode-preview-button:hover {
   transform: translateY(-2px);
 }
 
-.support-qrcode img {
+.qrcode-preview-button img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.qrcode-preview-dialog {
+  width: min(92vw, 520px);
+  max-height: 92vh;
+  padding: 42px 20px 20px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--vp-c-bg);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+}
+
+.qrcode-preview-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.qrcode-preview-dialog img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: calc(92vh - 72px);
+  margin: 0 auto;
+}
+
+.qrcode-preview-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--vp-c-default-soft);
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .support-qrcode figcaption {

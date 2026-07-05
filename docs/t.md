@@ -12,8 +12,14 @@ Change to <a href='https://topyuan.top/clock/en/t'>English</a>
 
 **强烈建议你进行更新，新版本已增加如下表盘，并在持续OTA中..**
 <div class="clockface-grid">
-  <img src="/img/clockfaces/25_GTA_VI.webp" alt="25_GTA_VI" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/24_rainy_window.webp" alt="24_rainy_window" loading="lazy" decoding="async" />
+  <figure>
+    <img src="/img/clockfaces/25_GTA_VI.webp" alt="GTA VI" loading="lazy" decoding="async" />
+    <figcaption>GTA VI</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/clockfaces/24_rainy_window.webp" alt="Rainy Window" loading="lazy" decoding="async" />
+    <figcaption>Rainy Window</figcaption>
+  </figure>
 </div>
 
 ## 为什么
@@ -105,5 +111,18 @@ ESP32包含一个分区表，将芯片空间划分为不同区域，在OTA更新
   max-width: 220px;
   height: auto;
   justify-self: center;
+}
+
+.clockface-grid figure {
+  margin: 0;
+  min-width: 0;
+  text-align: center;
+}
+
+.clockface-grid figcaption {
+  margin-top: 8px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.35;
 }
 </style>

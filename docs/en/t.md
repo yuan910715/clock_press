@@ -12,8 +12,14 @@ If you don't want to update manually, the current older version will continue to
 
 ***I strongly recommend that you update. The new version has added the following clockfaces and is continuously being updated via OTA.***
 <div class="clockface-grid">
-  <img src="/img/clockfaces/25_GTA_VI.webp" alt="25_GTA_VI" loading="lazy" decoding="async" />
-  <img src="/img/clockfaces/24_rainy_window.webp" alt="24_rainy_window" loading="lazy" decoding="async" />
+  <figure>
+    <img src="/img/clockfaces/25_GTA_VI.webp" alt="GTA VI" loading="lazy" decoding="async" />
+    <figcaption>GTA VI</figcaption>
+  </figure>
+  <figure>
+    <img src="/img/clockfaces/24_rainy_window.webp" alt="Rainy Window" loading="lazy" decoding="async" />
+    <figcaption>Rainy Window</figcaption>
+  </figure>
 </div>
 
 ## Why
@@ -106,5 +112,18 @@ Thank you for using this project, and I hope you enjoy it!
   max-width: 220px;
   height: auto;
   justify-self: center;
+}
+
+.clockface-grid figure {
+  margin: 0;
+  min-width: 0;
+  text-align: center;
+}
+
+.clockface-grid figcaption {
+  margin-top: 8px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.35;
 }
 </style>
