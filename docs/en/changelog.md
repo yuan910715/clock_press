@@ -36,6 +36,10 @@
 
 ## Changelog for firmware
 
+### 2026.8.2 v4.2
+- Add clockface:Zelda-Sunrise
+- Modify clockface:World Map
+
 ### 2026.7.4 v4.1
 - Add clockface:GTA VI
 

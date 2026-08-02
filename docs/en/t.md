@@ -13,6 +13,10 @@ If you don't want to update manually, the current older version will continue to
 ***I strongly recommend that you update. The new version has added the following clockfaces and is continuously being updated via OTA.***
 <div class="clockface-grid">
   <figure>
+    <img src="/img/clockfaces/26_zelda_sunrise.webp" alt="Zelda-Sunrise" loading="lazy" decoding="async" />
+    <figcaption>Zelda-Sunrise</figcaption>
+  </figure>
+  <figure>
     <img src="/img/clockfaces/25_GTA_VI.webp" alt="GTA VI" loading="lazy" decoding="async" />
     <figcaption>GTA VI</figcaption>
   </figure>

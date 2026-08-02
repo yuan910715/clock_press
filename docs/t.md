@@ -13,6 +13,10 @@ Change to <a href='https://topyuan.top/clock/en/t'>English</a>
 **强烈建议你进行更新，新版本已增加如下表盘，并在持续OTA中..**
 <div class="clockface-grid">
   <figure>
+    <img src="/img/clockfaces/26_zelda_sunrise.webp" alt="Zelda-Sunrise" loading="lazy" decoding="async" />
+    <figcaption>Zelda-Sunrise</figcaption>
+  </figure>
+  <figure>
     <img src="/img/clockfaces/25_GTA_VI.webp" alt="GTA VI" loading="lazy" decoding="async" />
     <figcaption>GTA VI</figcaption>
   </figure>

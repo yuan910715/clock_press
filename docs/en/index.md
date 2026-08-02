@@ -5,6 +5,7 @@ If you have completed the configuration, you can access <a href="https://topyuan
 
 ## All Clockfaces
 <div class="clockface-grid">
+  <figure><img src="/img/clockfaces/26_zelda_sunrise.webp" alt="Zelda-Sunrise" loading="lazy" decoding="async" /><figcaption>Zelda-Sunrise</figcaption></figure>
   <figure><img src="/img/clockfaces/25_GTA_VI.webp" alt="GTA VI" loading="lazy" decoding="async" /><figcaption>GTA VI</figcaption></figure>
   <figure><img src="/img/clockfaces/24_rainy_window.webp" alt="Rainy Window" loading="lazy" decoding="async" /><figcaption>Rainy Window</figcaption></figure>
   <figure><img src="/img/clockfaces/23_codex.webp" alt="Codex" loading="lazy" decoding="async" /><figcaption>Codex</figcaption></figure>
