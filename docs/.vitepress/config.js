@@ -38,6 +38,10 @@ export default {
                         ]
                     },
                     {
+                        text: "API",
+                        link: "/api.md"
+                    },
+                    {
                         text: "关于",
                         items:[
                             {text: "项目介绍",link: "/project.md"},
@@ -104,6 +108,10 @@ export default {
                         ]
                     },
                     {
+                        text: "API",
+                        link: "/en/api.md"
+                    },
+                    {
                         text: "About",
                         items:[
                             {text: "Introduction",link: "/en/project.md"},
@@ -128,4 +136,4 @@ export default {
         }
         }
       }
-} 
+}
