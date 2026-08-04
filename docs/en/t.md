@@ -13,6 +13,10 @@ If you don't want to update manually, the current older version will continue to
 ***I strongly recommend that you update. The new version has added the following clockfaces and is continuously being updated via OTA.***
 <div class="clockface-grid">
   <figure>
+    <img src="/img/clockfaces/27_particle_clock.webp" alt="Particle-Time" loading="lazy" decoding="async" />
+    <figcaption>Particle-Time</figcaption>
+  </figure>
+  <figure>
     <img src="/img/clockfaces/26_zelda_sunrise.webp" alt="Zelda-Sunrise" loading="lazy" decoding="async" />
     <figcaption>Zelda-Sunrise</figcaption>
   </figure>

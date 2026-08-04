@@ -208,7 +208,7 @@ version: 4.2
 | `wifiSsid` | 字符串 | 设备当前连接的 Wi-Fi SSID | 当前连接 | 只读 |
 | `ntpServer` | 字符串 | NTP 服务器主机名或 IP | `ntp2.aliyun.com` | `ntpServer` |
 | `displayRotation` | 枚举整数 | 屏幕旋转：`0`=0°、`1`=90°、`2`=180°、`3`=270° | `0` | `displayRotation` |
-| `clockFace` | 枚举整数 | 当前表盘编号，`1`～`26`，详见表盘编号表 | `1` | `clockFace` |
+| `clockFace` | 枚举整数 | 当前表盘编号，`1`～`27`，详见表盘编号表 | `1` | `clockFace` |
 | `language` | 枚举整数 | 配置页语言：`0` 中文、`1` English | `0` | `language` |
 | `totalYear` | 整数 | 累计运行年数 | `0` | 只读 |
 | `totalMonth` | 整数 | 累计运行月数 | `0` | 只读 |
@@ -223,7 +223,7 @@ version: 4.2
 | `timemode` | 枚举整数 | 时区模式：`0` 固定 UTC 偏移、`1` 带夏令时规则的 POSIX 时区 | `0` | `timemode` |
 | `posix` | 字符串 | 实际交给时钟库的 POSIX TZ 字符串 | `<+8>-8` | `posix` |
 | `autoChange` | 枚举整数 | 每天 00:00 自动换表盘：`0` 关闭、`1` 顺序、`2` 随机 | `1` | `autoChange` |
-| `faceControl` | 字符串 | 26 位表盘启用掩码；从左至右对应表盘 1～26，`1` 启用、`0`禁用 | 26 个 `1` | `faceControl` |
+| `faceControl` | 字符串 | 27 位表盘启用掩码；从左至右对应表盘 1～27，`1` 启用、`0` 禁用 | 27 个 `1` | `faceControl` |
 | `reversePhase` | 布尔整数 | HUB75 时钟相位：`1` 反相、`0` 正常 | `0` | `reversePhase` |
 | `nightMode` | 枚举整数 | 夜间策略：`0` 无、`1` 关闭 LED、`2` 显示超大时钟 | `2` | `nightMode` |
 | `superColor` | 整数 | 超大时钟颜色，RGB565 十进制值，`0`～`65535` | `16936` | `superColor` |
@@ -261,7 +261,7 @@ displayBright=180&use24hFormat=1
 | `ldrPin` | 整数 | 当前硬件为 `35` | 更改光敏电阻 GPIO；固件不验证该引脚是否支持 ADC |
 | `ntpServer` | 字符串 | 有效 NTP 主机名/IP | 修改后立即同步 |
 | `displayRotation` | 整数 | `0`～`3` | 分别表示 0°、90°、180°、270° |
-| `clockFace` | 整数 | `1`～`26` | 切换当前表盘 |
+| `clockFace` | 整数 | `1`～`27` | 切换当前表盘 |
 | `language` | 整数 | `0` 或 `1` | 修改配置页语言；重新打开配置页面后生效 |
 | `brightMethod` | 整数 | `0`、`1`、`2` | 自动、定时、固定亮度 |
 | `nightLevel` | 整数 | `1`～`5` | 超出范围会被改为 `1` |
@@ -273,7 +273,7 @@ displayBright=180&use24hFormat=1
 | `timemode` | 整数 | `0` 或 `1` | 固定偏移 / 智能夏令时 |
 | `posix` | URL 编码字符串 | 合法 POSIX TZ | 固件不校验语法，需自行校验，具体请参考后续正则表达式 |
 | `autoChange` | 整数 | `0`、`1`、`2` | 关闭 / 顺序 / 随机换表盘 |
-| `faceControl` | 26 字符字符串 | 仅使用 `0`、`1` | 第 N 位控制第 N 个表盘；建议至少启用两个表盘 |
+| `faceControl` | 27 字符字符串 | 仅使用 `0`、`1` | 第 N 位控制第 N 个表盘；建议至少启用两个表盘 |
 | `nightMode` | 整数 | `0`、`1`、`2` | 无策略 / 关屏 / 超大时钟 |
 | `superColor` | 十进制整数 | `0`～`65535` | 超大时钟 RGB565 颜色 |
 
@@ -328,7 +328,7 @@ curl -i -X POST http://192.168.1.50/set \
 
 ```bash
 curl -i -X POST http://192.168.1.50/set \
-  --data "autoChange=1&faceControl=11100000000000000000000000"
+  --data "autoChange=1&faceControl=111000000000000000000000000"
 ```
 
 ### 5.2 固件实际校正行为
@@ -393,19 +393,20 @@ curl -i -X POST http://192.168.1.50/erase
 
 | 编号 | 表盘 | 编号 | 表盘 |
 | --- | --- | --- | --- |
-| 1 | Super Mario | 14 | Pikachu |
-| 2 | Pac Man | 15 | Shar Pei Dog |
-| 3 | World Map | 16 | Girl |
-| 4 | Time In Words | 17 | Kirby |
-| 5 | Clock Tower | 18 | Labubu-Zimomo |
-| 6 | Pokedex | 19 | Hello Kitty |
-| 7 | Retro Computer | 20 | Twinkle Twinkle |
-| 8 | Snoopy | 21 | Zootopia |
-| 9 | Nyan Cat | 22 | Minecraft-Village |
-| 10 | Transformer | 23 | Codex |
-| 11 | Minecraft-Torch | 24 | Rainy Window |
-| 12 | Coffee | 25 | GTA VI |
-| 13 | Pepsi | 26 | Zelda-Sunrise |
+| 1 | Super Mario | 15 | Shar Pei Dog |
+| 2 | Pac Man | 16 | Girl |
+| 3 | World Map | 17 | Kirby |
+| 4 | Time In Words | 18 | Labubu-Zimomo |
+| 5 | Clock Tower | 19 | Hello Kitty |
+| 6 | Pokedex | 20 | Twinkle Twinkle |
+| 7 | Retro Computer | 21 | Zootopia |
+| 8 | Snoopy | 22 | Minecraft-Village |
+| 9 | Nyan Cat | 23 | Codex |
+| 10 | Transformer | 24 | Rainy Window |
+| 11 | Minecraft-Torch | 25 | GTA VI |
+| 12 | Coffee | 26 | Zelda-Sunrise |
+| 13 | Pepsi | 27 | Particle-Time |
+| 14 | Pikachu |  |  |
 
 <style>
 /* API 页面使用更宽的正文区域，同时保留右侧目录。 */

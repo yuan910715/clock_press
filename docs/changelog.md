@@ -2,6 +2,9 @@
 
 ## 时钟说明更新日志
 
+### 2026.8.4 v2.0  
+- 新增API
+
 ### 2026.6.28 v1.9  
 - 摆放方式->开始,新增表盘全览Gif图
 - 新增v3.23 <a href="https://topyuan.top/clock/t">手动更新说明</a>
@@ -38,6 +41,7 @@
 
 ### 2026.8.2 v4.2
 - 新增Zelda-Sunrise表盘
+- 新增Particle-Time表盘
 - 调整World Map表盘
 
 ### 2026.7.4 v4.1

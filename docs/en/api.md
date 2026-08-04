@@ -208,7 +208,7 @@ The complete header list follows. A default value is the firmware default used o
 | `wifiSsid` | String | SSID of the Wi-Fi network to which the device is currently connected | Current connection | Read-only |
 | `ntpServer` | String | NTP server hostname or IP address | `ntp2.aliyun.com` | `ntpServer` |
 | `displayRotation` | Enum integer | Display rotation: `0`=0°, `1`=90°, `2`=180°, `3`=270° | `0` | `displayRotation` |
-| `clockFace` | Enum integer | Current clock-face number, `1`–`26`; see the clock-face table | `1` | `clockFace` |
+| `clockFace` | Enum integer | Current clock-face number, `1`–`27`; see the clock-face table | `1` | `clockFace` |
 | `language` | Enum integer | Configuration UI language: `0` Chinese, `1` English | `0` | `language` |
 | `totalYear` | Integer | Accumulated runtime, years component | `0` | Read-only |
 | `totalMonth` | Integer | Accumulated runtime, months component | `0` | Read-only |
@@ -223,7 +223,7 @@ The complete header list follows. A default value is the firmware default used o
 | `timemode` | Enum integer | Time-zone mode: `0` fixed UTC offset, `1` POSIX time zone with daylight-saving rules | `0` | `timemode` |
 | `posix` | String | POSIX TZ string passed to the clock library | `<+8>-8` | `posix` |
 | `autoChange` | Enum integer | Change the clock face daily at 00:00: `0` disabled, `1` sequential, `2` random | `1` | `autoChange` |
-| `faceControl` | String | 26-character clock-face enable mask; left to right corresponds to faces 1–26, where `1` enables and `0` disables a face | 26 `1` characters | `faceControl` |
+| `faceControl` | String | 27-character clock-face enable mask; left to right corresponds to faces 1–27, where `1` enables and `0` disables a face | 27 `1` characters | `faceControl` |
 | `reversePhase` | Boolean integer | HUB75 clock phase: `1` inverted, `0` normal | `0` | `reversePhase` |
 | `nightMode` | Enum integer | Nighttime behavior: `0` none, `1` turn off the LED panel, `2` show the oversized clock | `2` | `nightMode` |
 | `superColor` | Integer | Oversized-clock color as a decimal RGB565 value, `0`–`65535` | `16936` | `superColor` |
@@ -261,7 +261,7 @@ A single request may include one or more fields. On success, the endpoint return
 | `ldrPin` | Integer | `35` on the current hardware | Change the photoresistor GPIO; the firmware does not verify that the pin supports ADC |
 | `ntpServer` | String | Valid NTP hostname or IP address | Synchronize immediately after changing the server |
 | `displayRotation` | Integer | `0`–`3` | Represent 0°, 90°, 180°, and 270°, respectively |
-| `clockFace` | Integer | `1`–`26` | Switch the current clock face |
+| `clockFace` | Integer | `1`–`27` | Switch the current clock face |
 | `language` | Integer | `0` or `1` | Change the configuration UI language; takes effect after reopening the configuration page |
 | `brightMethod` | Integer | `0`, `1`, or `2` | Automatic, scheduled, or fixed brightness |
 | `nightLevel` | Integer | `1`–`5` | Values outside the range are changed to `1` |
@@ -273,7 +273,7 @@ A single request may include one or more fields. On success, the endpoint return
 | `timemode` | Integer | `0` or `1` | Fixed offset or daylight-saving-aware mode |
 | `posix` | URL-encoded string | Valid POSIX TZ string | The firmware does not validate the syntax; validate it in the client using the regular expression below |
 | `autoChange` | Integer | `0`, `1`, or `2` | Disable, sequential, or random clock-face switching |
-| `faceControl` | 26-character string | Only `0` and `1` | Character N controls clock face N; enabling at least two faces is recommended |
+| `faceControl` | 27-character string | Only `0` and `1` | Character N controls clock face N; enabling at least two faces is recommended |
 | `nightMode` | Integer | `0`, `1`, or `2` | No action, turn off the display, or show the oversized clock |
 | `superColor` | Decimal integer | `0`–`65535` | RGB565 color for the oversized clock |
 
@@ -328,7 +328,7 @@ Enable sequential automatic clock-face switching and allow only faces 1, 2, and 
 
 ```bash
 curl -i -X POST http://192.168.1.50/set \
-  --data "autoChange=1&faceControl=11100000000000000000000000"
+  --data "autoChange=1&faceControl=111000000000000000000000000"
 ```
 
 ### 5.2 Firmware Coercion and Clamping Behavior
@@ -393,19 +393,20 @@ After this call, the device is no longer reachable at its previous IP address an
 
 | Number | Clock Face | Number | Clock Face |
 | --- | --- | --- | --- |
-| 1 | Super Mario | 14 | Pikachu |
-| 2 | Pac Man | 15 | Shar Pei Dog |
-| 3 | World Map | 16 | Girl |
-| 4 | Time In Words | 17 | Kirby |
-| 5 | Clock Tower | 18 | Labubu-Zimomo |
-| 6 | Pokedex | 19 | Hello Kitty |
-| 7 | Retro Computer | 20 | Twinkle Twinkle |
-| 8 | Snoopy | 21 | Zootopia |
-| 9 | Nyan Cat | 22 | Minecraft-Village |
-| 10 | Transformer | 23 | Codex |
-| 11 | Minecraft-Torch | 24 | Rainy Window |
-| 12 | Coffee | 25 | GTA VI |
-| 13 | Pepsi | 26 | Zelda-Sunrise |
+| 1 | Super Mario | 15 | Shar Pei Dog |
+| 2 | Pac Man | 16 | Girl |
+| 3 | World Map | 17 | Kirby |
+| 4 | Time In Words | 18 | Labubu-Zimomo |
+| 5 | Clock Tower | 19 | Hello Kitty |
+| 6 | Pokedex | 20 | Twinkle Twinkle |
+| 7 | Retro Computer | 21 | Zootopia |
+| 8 | Snoopy | 22 | Minecraft-Village |
+| 9 | Nyan Cat | 23 | Codex |
+| 10 | Transformer | 24 | Rainy Window |
+| 11 | Minecraft-Torch | 25 | GTA VI |
+| 12 | Coffee | 26 | Zelda-Sunrise |
+| 13 | Pepsi | 27 | Particle-Time |
+| 14 | Pikachu |  |  |
 
 <style>
 /* Use a wider content area for the API page while retaining the right-hand outline. */

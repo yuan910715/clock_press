@@ -13,6 +13,10 @@ Change to <a href='https://topyuan.top/clock/en/t'>English</a>
 **强烈建议你进行更新，新版本已增加如下表盘，并在持续OTA中..**
 <div class="clockface-grid">
   <figure>
+    <img src="/img/clockfaces/27_particle_clock.webp" alt="Particle-Time" loading="lazy" decoding="async" />
+    <figcaption>Particle-Time</figcaption>
+  </figure>
+  <figure>
     <img src="/img/clockfaces/26_zelda_sunrise.webp" alt="Zelda-Sunrise" loading="lazy" decoding="async" />
     <figcaption>Zelda-Sunrise</figcaption>
   </figure>
