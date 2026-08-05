@@ -405,7 +405,7 @@ After this call, the device is no longer reachable at its previous IP address an
 | 10 | Transformer | 24 | Rainy Window |
 | 11 | Minecraft-Torch | 25 | GTA VI |
 | 12 | Coffee | 26 | Zelda-Sunrise |
-| 13 | Pepsi | 27 | Particle-Time |
+| 13 | Pepsi | 27 | Particle Time |
 | 14 | Pikachu |  |  |
 
 <style>

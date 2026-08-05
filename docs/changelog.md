@@ -41,7 +41,7 @@
 
 ### 2026.8.2 v4.2
 - 新增Zelda-Sunrise表盘
-- 新增Particle-Time表盘
+- 新增Particle Time表盘
 - 调整World Map表盘
 
 ### 2026.7.4 v4.1
