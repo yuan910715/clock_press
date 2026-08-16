@@ -191,7 +191,10 @@ displayBright: 205
 autoBrightMin: 30
 autoBrightMax: 2000
 wifiSsid: MyWiFi
+ntpFailRestart: 1
 clockFace: 1
+autoChange: 1
+autoInterval: 0
 version: 4.2
 ```
 
@@ -207,6 +210,7 @@ version: 4.2
 | `ldrPin` | 整数 | 光敏电阻所接 GPIO；当前硬件页面固定使用 GPIO 35 | `35` | `ldrPin` |
 | `wifiSsid` | 字符串 | 设备当前连接的 Wi-Fi SSID | 当前连接 | 只读 |
 | `ntpServer` | 字符串 | NTP 服务器主机名或 IP | `ntp2.aliyun.com` | `ntpServer` |
+| `ntpFailRestart` | 布尔整数 | `1` 启用 NTP 连续失败自动重启，`0` 禁用；设备至少成功同步过一次后，连续 24 次同步失败会重启，任意一次成功同步都会清零失败计数 | `1` | `ntpFailRestart` |
 | `displayRotation` | 枚举整数 | 屏幕旋转：`0`=0°、`1`=90°、`2`=180°、`3`=270° | `0` | `displayRotation` |
 | `clockFace` | 枚举整数 | 当前表盘编号，`1`～`27`，详见表盘编号表 | `1` | `clockFace` |
 | `language` | 枚举整数 | 配置页语言：`0` 中文、`1` English | `0` | `language` |
@@ -222,7 +226,8 @@ version: 4.2
 | `sqtext` | 字符串 | 固定 UTC 偏移显示值，例如 `+8:00`、`-3:30`；用于 `timemode=0` | `+8:00` | `sqtext` |
 | `timemode` | 枚举整数 | 时区模式：`0` 固定 UTC 偏移、`1` 带夏令时规则的 POSIX 时区 | `0` | `timemode` |
 | `posix` | 字符串 | 实际交给时钟库的 POSIX TZ 字符串 | `<+8>-8` | `posix` |
-| `autoChange` | 枚举整数 | 每天 00:00 自动换表盘：`0` 关闭、`1` 顺序、`2` 随机 | `1` | `autoChange` |
+| `autoChange` | 枚举整数 | 自动换表盘方式：`0` 关闭、`1` 顺序、`2` 随机；执行计划由 `autoInterval` 决定 | `1` | `autoChange` |
+| `autoInterval` | 整数 | 自动换表盘间隔，单位为分钟；仅在 `autoChange` 非 `0` 时生效。`0` 表示每天 00:00，其他合法值为 `10`～`1440` 且必须是 10 的倍数。对应固件内部配置 `autoChangeInterval` | `0` | `autoInterval` |
 | `faceControl` | 字符串 | 27 位表盘启用掩码；从左至右对应表盘 1～27，`1` 启用、`0` 禁用 | 27 个 `1` | `faceControl` |
 | `reversePhase` | 布尔整数 | HUB75 时钟相位：`1` 反相、`0` 正常 | `0` | `reversePhase` |
 | `nightMode` | 枚举整数 | 夜间策略：`0` 无、`1` 关闭 LED、`2` 显示超大时钟 | `2` | `nightMode` |
@@ -260,6 +265,7 @@ displayBright=180&use24hFormat=1
 | `use24hFormat` | 布尔字符串 | `0` 或 `1` | 使用24小时制 |
 | `ldrPin` | 整数 | 当前硬件为 `35` | 更改光敏电阻 GPIO；固件不验证该引脚是否支持 ADC |
 | `ntpServer` | 字符串 | 有效 NTP 主机名/IP | 修改后立即同步 |
+| `ntpFailRestart` | 布尔字符串 | `0` 或 `1` | 是否在 NTP 连续 24 次同步失败后自动重启；只有设备至少成功同步过一次后才开始累计失败次数 |
 | `displayRotation` | 整数 | `0`～`3` | 分别表示 0°、90°、180°、270° |
 | `clockFace` | 整数 | `1`～`27` | 切换当前表盘 |
 | `language` | 整数 | `0` 或 `1` | 修改配置页语言；重新打开配置页面后生效 |
@@ -273,6 +279,7 @@ displayBright=180&use24hFormat=1
 | `timemode` | 整数 | `0` 或 `1` | 固定偏移 / 智能夏令时 |
 | `posix` | URL 编码字符串 | 合法 POSIX TZ | 固件不校验语法，需自行校验，具体请参考后续正则表达式 |
 | `autoChange` | 整数 | `0`、`1`、`2` | 关闭 / 顺序 / 随机换表盘 |
+| `autoInterval` | 整数 | `0`，或 `10`～`1440` 内 10 的倍数 | 自动换表盘间隔，单位为分钟；仅在 `autoChange` 非 `0` 时生效，`0` 表示每天 00:00。对应固件内部配置 `autoChangeInterval` |
 | `faceControl` | 27 字符字符串 | 仅使用 `0`、`1` | 第 N 位控制第 N 个表盘；建议至少启用两个表盘 |
 | `nightMode` | 整数 | `0`、`1`、`2` | 无策略 / 关屏 / 超大时钟 |
 | `superColor` | 十进制整数 | `0`～`65535` | 超大时钟 RGB565 颜色 |
@@ -298,6 +305,14 @@ curl -i -X POST http://192.168.1.50/set \
 ```bash
 curl -i -X POST http://192.168.1.50/set \
   --data-urlencode "autoBright=0030,2000"
+```
+
+设置 NTP 服务器，并启用连续 24 次同步失败后自动重启：
+
+```bash
+curl -i -X POST http://192.168.1.50/set \
+  --data-urlencode "ntpServer=ntp2.aliyun.com" \
+  --data "ntpFailRestart=1"
 ```
 
 设置固定 UTC+8 时区。建议将三个相关字段放在同一个请求中：
@@ -331,12 +346,29 @@ curl -i -X POST http://192.168.1.50/set \
   --data "autoChange=1&faceControl=111000000000000000000000000"
 ```
 
+每 180 分钟顺序更换一次表盘：
+
+```bash
+curl -i -X POST http://192.168.1.50/set \
+  --data "autoChange=1&autoInterval=180"
+```
+
+将自动换表盘恢复为每天 00:00 执行：
+
+```bash
+curl -i -X POST http://192.168.1.50/set \
+  --data "autoInterval=0"
+```
+
 ### 5.2 固件实际校正行为
 
 - `autoBright` 使用固定位置解析：前 4 个字符为最小值，第 6～9 个字符为最大值，因此必须按 `0030,2000` 这样的 9 字符格式提交
 - `autoBrightMin` 小于 `1` 会改为 `1`，大于 `300` 会改为 `300`
 - `autoBrightMax` 小于 `800` 会改为 `800`，大于 `4095` 会改为 `4095`
 - `nightLevel` 不在 `1`～`5` 时会改为 `1`
+- `ntpFailRestart` 只有字符串 `1` 会启用，其他非空值都会按关闭处理；建议只提交 `0` 或 `1`
+- `/set` 仅接受值为 `0`，或 `10`～`1440` 内 10 的倍数的 `autoInterval`；非法值会被忽略并保留原设置。启动时如果读到非法的已保存值，固件会在内存中改为 `0`
+- `autoInterval` 为非 `0` 时按相对间隔计时；设备启动、自动换表盘模式或间隔发生变化，以及手动切换表盘后，都会重新开始计时
 - 其他多数整数参数没有范围校验；调用方应自行保证取值有效
 - 未知字段和只读字段不会报错，响应仍可能是 `204`
 

@@ -61,6 +61,10 @@ time6.apple.com
 time7.apple.com
 ```
 
+Set **Restart after 24 consecutive sync failures**  
+If selected, the device will automatically restart after 24 consecutive failed NTP synchronization attempts (approximately 24 hours)  
+`If you are temporarily using the clock after connecting to a mobile hotspot in areas without Wi-Fi, please turn off this switch. The system will always use an internal clock for timing when there is no network connection, and will not restart even after consecutive NTP synchronization failures`
+
 ## Use 24h format?
 Whether to use the 24-hour format. If the turned on, the 24-hour format will be used
 
@@ -135,7 +139,7 @@ LED rotates to suit different placements
 Change clockface
 
 ## Auto Change Clock Face
-Automatically change the clockface at 0:00 every day, sequence or random
+The clock face changes automatically in sequence or randomly, and can be set to change at 0:00 every day or at fixed intervals
 
 ## Special LED
 For differcent Leds  

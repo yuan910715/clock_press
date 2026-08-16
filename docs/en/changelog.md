@@ -39,6 +39,11 @@
 
 ## Changelog for firmware
 
+### 2026.8.16 v4.3
+- Add configurable intervals for automatic clockface changes
+- Add an automatic restart switch for NTP failures
+- Add API
+
 ### 2026.8.2 v4.2
 - Add clockface:Zelda-Sunrise
 - Add clockface:Particle Time

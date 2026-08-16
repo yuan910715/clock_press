@@ -191,7 +191,10 @@ displayBright: 205
 autoBrightMin: 30
 autoBrightMax: 2000
 wifiSsid: MyWiFi
+ntpFailRestart: 1
 clockFace: 1
+autoChange: 1
+autoInterval: 0
 version: 4.2
 ```
 
@@ -207,6 +210,7 @@ The complete header list follows. A default value is the firmware default used o
 | `ldrPin` | Integer | GPIO connected to the photoresistor; the current hardware page specifies GPIO 35 | `35` | `ldrPin` |
 | `wifiSsid` | String | SSID of the Wi-Fi network to which the device is currently connected | Current connection | Read-only |
 | `ntpServer` | String | NTP server hostname or IP address | `ntp2.aliyun.com` | `ntpServer` |
+| `ntpFailRestart` | Boolean integer | `1` enables restart after repeated NTP failures; `0` disables it. After at least one successful synchronization, 24 consecutive failed synchronization attempts restart the device; any successful synchronization resets the failure count | `1` | `ntpFailRestart` |
 | `displayRotation` | Enum integer | Display rotation: `0`=0°, `1`=90°, `2`=180°, `3`=270° | `0` | `displayRotation` |
 | `clockFace` | Enum integer | Current clock-face number, `1`–`27`; see the clock-face table | `1` | `clockFace` |
 | `language` | Enum integer | Configuration UI language: `0` Chinese, `1` English | `0` | `language` |
@@ -222,7 +226,8 @@ The complete header list follows. A default value is the firmware default used o
 | `sqtext` | String | Display value for a fixed UTC offset, such as `+8:00` or `-3:30`; used when `timemode=0` | `+8:00` | `sqtext` |
 | `timemode` | Enum integer | Time-zone mode: `0` fixed UTC offset, `1` POSIX time zone with daylight-saving rules | `0` | `timemode` |
 | `posix` | String | POSIX TZ string passed to the clock library | `<+8>-8` | `posix` |
-| `autoChange` | Enum integer | Change the clock face daily at 00:00: `0` disabled, `1` sequential, `2` random | `1` | `autoChange` |
+| `autoChange` | Enum integer | Automatic clock-face mode: `0` disabled, `1` sequential, `2` random; the schedule is controlled by `autoInterval` | `1` | `autoChange` |
+| `autoInterval` | Integer | Automatic clock-face interval in minutes; effective only when `autoChange` is not `0`. `0` means daily at 00:00; other valid values are multiples of 10 from `10` through `1440`. This HTTP field corresponds to the internal firmware setting `autoChangeInterval` | `0` | `autoInterval` |
 | `faceControl` | String | 27-character clock-face enable mask; left to right corresponds to faces 1–27, where `1` enables and `0` disables a face | 27 `1` characters | `faceControl` |
 | `reversePhase` | Boolean integer | HUB75 clock phase: `1` inverted, `0` normal | `0` | `reversePhase` |
 | `nightMode` | Enum integer | Nighttime behavior: `0` none, `1` turn off the LED panel, `2` show the oversized clock | `2` | `nightMode` |
@@ -260,6 +265,7 @@ A single request may include one or more fields. On success, the endpoint return
 | `use24hFormat` | Boolean string | `0` or `1` | Use 24-hour time |
 | `ldrPin` | Integer | `35` on the current hardware | Change the photoresistor GPIO; the firmware does not verify that the pin supports ADC |
 | `ntpServer` | String | Valid NTP hostname or IP address | Synchronize immediately after changing the server |
+| `ntpFailRestart` | Boolean string | `0` or `1` | Restart after 24 consecutive NTP synchronization failures; failures are counted only after the device has synchronized successfully at least once |
 | `displayRotation` | Integer | `0`–`3` | Represent 0°, 90°, 180°, and 270°, respectively |
 | `clockFace` | Integer | `1`–`27` | Switch the current clock face |
 | `language` | Integer | `0` or `1` | Change the configuration UI language; takes effect after reopening the configuration page |
@@ -273,6 +279,7 @@ A single request may include one or more fields. On success, the endpoint return
 | `timemode` | Integer | `0` or `1` | Fixed offset or daylight-saving-aware mode |
 | `posix` | URL-encoded string | Valid POSIX TZ string | The firmware does not validate the syntax; validate it in the client using the regular expression below |
 | `autoChange` | Integer | `0`, `1`, or `2` | Disable, sequential, or random clock-face switching |
+| `autoInterval` | Integer | `0`, or a multiple of 10 from `10` through `1440` | Automatic clock-face interval in minutes; effective only when `autoChange` is not `0`, and `0` means daily at 00:00. This HTTP field corresponds to the internal firmware setting `autoChangeInterval` |
 | `faceControl` | 27-character string | Only `0` and `1` | Character N controls clock face N; enabling at least two faces is recommended |
 | `nightMode` | Integer | `0`, `1`, or `2` | No action, turn off the display, or show the oversized clock |
 | `superColor` | Decimal integer | `0`–`65535` | RGB565 color for the oversized clock |
@@ -298,6 +305,14 @@ Set automatic-brightness thresholds. The exact `autoBright` format is a four-dig
 ```bash
 curl -i -X POST http://192.168.1.50/set \
   --data-urlencode "autoBright=0030,2000"
+```
+
+Set the NTP server and enable restart after 24 consecutive synchronization failures:
+
+```bash
+curl -i -X POST http://192.168.1.50/set \
+  --data-urlencode "ntpServer=ntp2.aliyun.com" \
+  --data "ntpFailRestart=1"
 ```
 
 Set a fixed UTC+8 time zone. Submit all three related fields in the same request:
@@ -331,12 +346,29 @@ curl -i -X POST http://192.168.1.50/set \
   --data "autoChange=1&faceControl=111000000000000000000000000"
 ```
 
+Change the clock face sequentially every 180 minutes:
+
+```bash
+curl -i -X POST http://192.168.1.50/set \
+  --data "autoChange=1&autoInterval=180"
+```
+
+Restore automatic clock-face switching to the daily 00:00 schedule:
+
+```bash
+curl -i -X POST http://192.168.1.50/set \
+  --data "autoInterval=0"
+```
+
 ### 5.2 Firmware Coercion and Clamping Behavior
 
 - `autoBright` is parsed at fixed character offsets: the first four characters are the minimum and characters 6–9 are the maximum. Submit exactly nine characters in the form `0030,2000`.
 - `autoBrightMin` values below `1` are changed to `1`; values above `300` are changed to `300`.
 - `autoBrightMax` values below `800` are changed to `800`; values above `4095` are changed to `4095`.
 - A `nightLevel` outside `1`–`5` is changed to `1`.
+- Only the string `1` enables `ntpFailRestart`; any other non-empty value disables it. Submit only `0` or `1`.
+- `/set` accepts `autoInterval` only when it is `0` or a multiple of 10 from `10` through `1440`. An invalid value is ignored and the existing setting is retained. If an invalid saved value is loaded at startup, the firmware changes the in-memory value to `0`.
+- A nonzero `autoInterval` is a relative interval. Its timer restarts when the device boots, when the automatic mode or interval changes, and after a manual clock-face change.
 - Most other integer parameters are not range-checked; clients must ensure that values are valid.
 - Unknown and read-only fields do not produce an error; the response may still be `204`.
 
