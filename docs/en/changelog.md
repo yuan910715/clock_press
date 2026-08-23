@@ -39,6 +39,10 @@
 
 ## Changelog for firmware
 
+### 2026.8.23 v4.31
+- Pac Man: When there are 8 or fewer beans remaining, there is an 80% probability of using a breadth-first search algorithm to avoid going without a bean for an extended period
+- World Map: Fixed an issue where a miscalculation of the day/night line caused by an error in calculating the solar declination
+
 ### 2026.8.16 v4.3
 - Add configurable intervals for automatic clockface changes
 - Add an automatic restart switch for NTP failures
