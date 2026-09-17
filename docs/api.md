@@ -86,12 +86,14 @@ curl -i https://topyuan.top/clock/findapi
   {
     "chipId": "9730432",
     "localIp": "192.168.31.247",
+    "ssid": "MyWiFi",
     "deviceType": "ClockWise Plus",
     "lastSeen": "2026-08-04 15:26:30"
   },
   {
     "chipId": "10557104",
     "localIp": "192.168.31.180",
+    "ssid": "MyWiFi",
     "deviceType": "SuperY",
     "lastSeen": "2026-08-04 15:20:12"
   }
@@ -102,6 +104,7 @@ curl -i https://topyuan.top/clock/findapi
 | --- | --- | --- |
 | `chipId` | 字符串 | 时钟芯片 ID |
 | `localIp` | 字符串 | 时钟上报的局域网 IPv4 地址，例如 `192.168.1.50` |
+| `ssid` | 字符串 | 时钟上报的 Wi-Fi SSID |
 | `deviceType` | 字符串 | `ClockWise Plus`、`SuperY` 或 `SuperY Lite` |
 | `lastSeen` | 字符串 | 服务器记录的最后上报时间，格式为 `YYYY-MM-DD HH:mm:ss` |
 

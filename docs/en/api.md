@@ -86,12 +86,14 @@ curl -i https://topyuan.top/clock/findapi
   {
     "chipId": "9730432",
     "localIp": "192.168.31.247",
+    "ssid": "MyWiFi",
     "deviceType": "ClockWise Plus",
     "lastSeen": "2026-08-04 15:26:30"
   },
   {
     "chipId": "10557104",
     "localIp": "192.168.31.180",
+    "ssid": "MyWiFi",
     "deviceType": "SuperY",
     "lastSeen": "2026-08-04 15:20:12"
   }
@@ -102,6 +104,7 @@ curl -i https://topyuan.top/clock/findapi
 | --- | --- | --- |
 | `chipId` | String | Clock chip ID |
 | `localIp` | String | Local IPv4 address reported by the clock, for example `192.168.1.50` |
+| `ssid` | String | Wi-Fi SSID reported by the clock |
 | `deviceType` | String | `ClockWise Plus`, `SuperY`, or `SuperY Lite` |
 | `lastSeen` | String | Time of the last report recorded by the server, in `YYYY-MM-DD HH:mm:ss` format |
 

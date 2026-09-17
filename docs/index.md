@@ -3,6 +3,9 @@
 如果你是首次使用，可访问 <a href="https://topyuan.top/clock/wifi">配置网络</a>  
 如你已经完成配置，可访问 <a href="https://topyuan.top/clock/find" target="_blank">查找我的时钟</a>  
 
+## 微信小程序
+<img src="/img/mini.jpg" alt="mini" loading="lazy" decoding="async" width="200" height="200"/>
+
 ## 表盘全览
 <div class="clockface-grid">
   <figure><img src="/img/clockfaces/27_particle_clock.webp" alt="Particle Time" loading="lazy" decoding="async" /><figcaption>Particle Time</figcaption></figure>
